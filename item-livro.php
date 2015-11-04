@@ -56,32 +56,7 @@
 	<header id="Header">
 	<!-- .header_placeholder 4sticky  -->
 	<div class="header_placeholder"></div>
-	<div id="Top_bar" style="margin-bottom: 160px;">
-		<div class="container">
-			<div class="column one">
-				<!-- .logo -->
-				<div class="logo">
-					<h1><a id="logo" href="index.html" title="Reggo Editora"></a></h1>
-				</div>
-				<!-- .menu_wrapper -->
-				<div class="menu_wrapper">
-					<!-- .header_action_button -->
-					<a id="header_action_button" href="#">COMPRE UM LIVRO!</a>
-					<!-- #searchform -->
-					<form method="get" id="searchform" action="#">
-						<a class="icon_search icon" href="#"><i class="icon-search-line"></i></a>
-						<a class="icon_close icon" href="#"><i class="icon-cancel"></i></a>
-						<input type="text" class="field" name="s"  placeholder="PROCURE POR AUTORES OU TÍTULOS"/>
-						<input type="submit" class="submit" value="" />
-					</form>
-
-					<!-- #menu -->
-					<nav id="menu" class="menu-main-menu-container">					<ul id="menu-main-menu" class="menu">												<li class="menu-item  menu-item-has-children"><a href="index.html"><span>HOME</span></a></li>												<li class="menu-item  menu-item-has-children"><a href="reggo.html"><span>REGGO</span></a></li>												<li class="menu-item  menu-item-has-children"><a href="#"><span>PUBLIQUE UM LIVRO •</span></a>						<ul class="sub-menu ">							<li class="menu-item "><a style="font-size:11px;" href="publique-empresas.html"><span><i style="color:#000;" class="icon-briefcase"></i> EMPRESAS</span></a></li>							<li class="menu-item "><a style="font-size:11px;" href="publique-literatura.html"><span><i style="color:#000;" class="icon-book"></i> LITERATURA</span></a></li>							<li class="menu-item "><a style="font-size:10px;" href="publique-tecnico.html"><span><i style="color:#000; font-size: 11px;" class="icon-graduation-cap"></i> TÉCNICO & ACADÊMICO</span></a></li>						</ul>						</li>																		<li class="menu-item  menu-item-has-children"><a href="#"><span>AUTORES</span></a></li>												<li class="active menu-item  menu-item-has-children"><a href="biblioteca.html"><span>BIBLIOTECA</span></a></li>												<li class="menu-item  menu-item-has-children"><a href="contato.html"><span>CONTATO</span></a></li>											</ul>					</nav>
-					<a class="responsive-menu-toggle" href="#"><i class='icon-menu'></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
+		<?php include './menu_reggo.php'; ?>
 
 	
 	<div id="Subheader-autores"></div>
@@ -92,43 +67,7 @@
 	<div id="Content" style="margin-top: 55px;">		<div class="content_wrapper clearfix">					<!-- .sections_group -->					<div class="sections_group">						<div class="section">							<div class="section_wrapper clearfix">								<div class="items_group clearfix">									<div class="column one woocommerce-content">										<div  class="post-40 product type-product status-publish has-post-thumbnail product_cat-clothing product_cat-hoodies pa_color-black pa_color-blue sale shipping-taxable purchasable product-type-variable product-cat-clothing product-cat-hoodies instock">																					<!--<span class="onsale">LANÇAMENTO</span>-->																						<div class="images">																							<a href="images/capas/tributos_serafim_CAPA.jpg" class="woocommerce-main-image zoom" title="" >																								<img width="500" src="images/capas/tributos_serafim_CAPA.jpg" class="attachment-shop_single wp-post-image" alt="" title="tributos"/></a>																								<!--<div class="thumbnails columns-3">																									<a href="upload/hoodie_7_back.jpg" class="zoom first" title="hoodie_7_back" data-rel="prettyPhoto[product-gallery]"><img width="200" height="200" src="upload/hoodie_7_back-200x200.jpg" class="attachment-shop_thumbnail" alt="hoodie_7_back"/></a>																										<a href="upload/hoodie_1_back.jpg" class="zoom" title="hoodie_1_back" data-rel="prettyPhoto[product-gallery]"><img width="200" height="200" src="upload/hoodie_1_back-200x200.jpg" class="attachment-shop_thumbnail" alt="hoodie_1_back"/></a>																										<a href="upload/hoodie_1_front.jpg" class="zoom last" title="hoodie_1_front" data-rel="prettyPhoto[product-gallery]"><img width="200" height="200" src="upload/hoodie_1_front-200x200.jpg" class="attachment-shop_thumbnail" alt="hoodie_1_front"/></a>																									</div>-->											</div>													<div class="summary entry-summary">												<h1 class="product_title entry-title">TRIBUTOS, É MAIS FÁCIL DO QUE VOCÊ PENSA</h1>												<br/>												<div>													<p>																												Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.														Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.													</p>													<hr/>												</div>																								<div>													<p class="product_meta" style="margin-right: 30px; font-weight: 900; font-size: 25px;">														<span >R$ 30,00</span>													</p>																										<a class="button" href="#" target="_blank"><i class="icon-lock-line"></i> QUERO COMPRAR</a>												</div>																								<div class="product_meta">													<h5>Mais informações</h5>													<ul class="list">														<li><strong>FORMATO:</strong> 14x21 cm</li>														<li><strong>PÁGINAS:</strong> 230</li>														<li><strong>ISBN:</strong> 978-85-8013-364-6</li>													</ul>												</div>																							</div>																																</div>										<!-- #product-40 -->									</div>								</div>							</div>						</div>					</div>							<!-- .four-columns - sidebar -->					<div class="four columns">						<div class="widget-area clearfix">						    <aside id="woocommerce_products-2" class="widget woocommerce widget_products">						        <!--<h3>AUTOR</h3>-->						        <ul class="product_list_widget">						            	<div class="article_box">						            		<a class="has_hover" href="item-autor.html">						            		<div class="photo_mask">						            			<img class="scale-with-grid" src="images/autores/serafim.jpg" alt="SERAFIM CORRÊA"/>						            			<div class="mask">						            			</div>						            			<span class="button_image more"><i class="icon-eye"></i></span>						            		</div>						            		<div class="desc_wrapper" style="margin-bottom: -10px;">						            			<h6 class="title">Serafim Corrêa | <i class="icon-briefcase"></i></h6>						            			<hr>						            		</div>						            		</a>						            	</div>						        </ul>						    </aside>						    						</div>					</div>				</div>	</div>
 
 	<!-- #Footer -->
-	<footer id="Footer" class="clearfix" style="background-color: #D1D3D4;">
-
-	<div class="footer_action">
-		<div class="container" style="margin-bottom:100px;">
-			<div class="column one column_column">
-				<aside id="text-2" class="widget widget_text">
-				<h2><img class="scale-with-grid" src="images/logo-reggo.png" width="200" alt="Reggo Editora"/><h4 style="margin-top: -15px; letter-spacing: 15px;"> EDIÇÕES COM ARTE</h4></h2>
-				
-				</aside>
-				<!-- Social -->
-				<div class="social">
-					<ul>
-						<li style="margin-right: 20px;" class="facebook"><a target="_blank" href="#" title="Facebook"><i class="icon-facebook"></i></a></li>
-						<li style="margin-right: 20px;" class="googleplus"><a target="_blank" href="#" title="Google+"><i class="icon-gplus"></i></a></li>
-						<li style="margin-right: 20px;" class="twitter"><a target="_blank" href="#" title="Twitter"><i class="icon-twitter"></i></a></li>
-						<li style="margin-right: 20px;" class="instagram"><a target="_blank" href="#" title="Instagram"><i class="icon-instagram"></i></a></li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="footer_copy">
-		<div class="container">
-			<div class="column one">
-				<a id="back_to_top" href="#"><i class="icon-up-open-big"></i></a>
-				<!-- Copyrights -->
-				<div class="copyright">
-					copyright &copy; 2015 • Rego Editora. Todos os direitos reservados.
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	</footer>
+		<?php include './footer_reggo.php'; ?>	
 
 </div><!-- // WRAPPER -->
 

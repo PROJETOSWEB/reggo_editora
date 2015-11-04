@@ -163,9 +163,9 @@ Inovar, recriar, repaginar todas as histórias, todas as experiências com tale
 								<div style="padding: 0 40px;">
 									<h2>Ideias conectadas, ideias compartilhadas</h2>
 									<p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+Lançando um olhar sobre o novo mundo, a Editora Reggo investe num mercado que só cresce: livros e revistas digitais. Seja na adaptaçãode formatos físicos ou na construção de projetos especiais exclusivos para o mundo digital, saímos na frente, abrindo um mundo de possibilidades para autores ou leitores que já leem obras em seus tablets e smartphones. De revistas a catálogos técnicos, uma nova forma de reunir, produzir, consumir e distribuir os melhores conteúdos da mídia impressa com a mídia digital. Conteúdo segmentado, personalizado, portátil, com recursos multimídia e interativos. Todos compatíveis com as plataformas: Apple Store e Google Play. 
 									</p>
-									<a href="#" class="button button_large">PUblique hoje mesmo</a>
+									<a href="orcamento.php" class="button button_large">Publique hoje mesmo</a>
 								</div>
 							</div>
 							
@@ -194,7 +194,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 											</a>
 											<div class="hover-box">
 												<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
 											</div>
 										</li>
                                         <!-- // item capas -->
@@ -206,7 +206,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -218,7 +218,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -230,7 +230,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -242,7 +242,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -254,7 +254,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -266,7 +266,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -278,7 +278,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -290,7 +290,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -302,7 +302,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -314,7 +314,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -326,7 +326,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -338,7 +338,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                         	</a>
                                         	<div class="hover-box">
                                         		<h5><img src="images/logo-reggo.png" width="80"></h5>
-                                            	<a class="hover-button link" href="#"><i class="icon-link"></i></a>
+                                            	<a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
                                         	</div>
                                         </li>
                                         <!-- // item capas -->
@@ -360,9 +360,9 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 												<div style="padding: 0 40px;">
 													<h2>Obras com assinatura e personalidade</h2>
 													<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+				A Editora Reggo reconhece e incentiva o talento de 				nossos autores, somando todos os esforços para 				valorizar, em cada obra, o conteúdo, as ideias, a 				assinatura sentimental. Sejam técnicos, literários 				ou acadêmicos. Um trabalho planejado, que 				continua até  chegar às mãos de mais e mais 				leitores, obras cheias de personalidade e talento, 				que surgem das mais diferentes matizes literárias.
 													</p>
-													<a href="#" class="button button_large">publique hoje mesmo</a>
+													<a href="orcamento.php" class="button button_large">publique hoje mesmo</a>
 												</div>
 											</div>
 											
@@ -388,7 +388,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 										<li><a class="photo-wrapper prettyphoto" href="images/autores/serafim.jpg" title="Serafim Corrêa"><img src="images/autores/serafim.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 										<div class="hover-box" style="background: none;">
 											<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 										</div>
 										</li>
 				                        
@@ -396,7 +396,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 										<li><a class="photo-wrapper prettyphoto" href="images/autores/maze.jpg" title="Mazé Mourão"><img src="images/autores/maze.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 										<div class="hover-box" style="background: none;">
 											<h5><img src="images/transp.png" width="80"></h5>
-										    <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+										    <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 										</div>
 										</li>
 				                        
@@ -404,7 +404,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 										<li><a class="photo-wrapper prettyphoto" href="images/autores/autor1.jpg" title="Autora XXXXX"><img  src="images/autores/autor1.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 										<div class="hover-box" style="background: none;">
 											<h5><img src="images/transp.png" width="80"></h5>
-										    <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+										    <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 										</div>
 										</li>
 										
@@ -412,77 +412,77 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 										<li><a class="photo-wrapper prettyphoto" href="images/autores/celdo.jpg" title="Celdo Braga"><img  src="images/autores/celdo.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 										<div class="hover-box" style="background: none;">
 											<h5><img src="images/transp.png" width="80"></h5>
-										    <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+										    <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 										</div>
 										</li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/renato-bagre.jpg" title="Renato Bagre"><img  src="images/autores/renato-bagre.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/roberio-braga.jpg" title="Robério Braga"><img  src="images/autores/roberio-braga.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/autor2.jpg" title="Autora XXXXX"><img  src="images/autores/autor2.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/autor3.jpg" title="Autora XXXXX"><img  src="images/autores/autor3.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/autor4.jpg" title="Autora XXXXX"><img  src="images/autores/autor4.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/autor5.jpg" title="Autora XXXXX"><img  src="images/autores/autor5.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/autor6.jpg" title="Autora XXXXX"><img  src="images/autores/autor6.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/autor7.jpg" title="Autora XXXXX"><img  src="images/autores/autor7.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/autor8.jpg" title="Autora XXXXX"><img  src="images/autores/autor8.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                        
 				                        <li><a class="photo-wrapper prettyphoto" href="images/autores/gilberto-sucesso.jpg" title="Gilberto Sucesso"><img  src="images/autores/gilberto-sucesso.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
 				                        <div class="hover-box" style="background: none;">
 				                        	<h5><img src="images/transp.png" width="80"></h5>
-				                            <a class="hover-button link" href="#"><i class="icon-link"></i></a>
+				                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
 				                        </div>
 				                        </li>
 				                      
