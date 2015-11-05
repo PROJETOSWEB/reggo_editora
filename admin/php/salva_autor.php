@@ -22,27 +22,8 @@ $twitter = $_POST['twitter'];
 $instagram = $_POST['instagram'];
 
 
-echo $genero1 = $_POST['genero1'];
-echo $genero2 = $_POST['genero2'];
-echo $genero3 = $_POST['genero3'];
-
-
-exit;
-if($genero1 <> ""){
-    $genero1 = $genero1.",";
-}
-
-
-if($genero2<> ""){
-    $genero2 = $genero2.",";
-}
-
-if($genero3<> ""){
-    $genero3 = $genero3.",";
-}
-
-$generos = $genero1.$genero2.$genero3;
-
+$data_autor = explode('/', $inicio);
+$data_inicion = $data_autor[2] . "-" . $data_autor[1] . "-" . $data_autor[0];
 
 //PEGANDO IMAGEM
 $fileName = $_FILES["img"]["name"];
@@ -51,8 +32,9 @@ $fileTmpLoc = $_FILES["img"]["tmp_name"];
 $moveResult = move_uploaded_file($fileTmpLoc, $pathAndName);
 
 
-$insert = "INSERT INTO autor (data_autor, generos, nome, info, img, reflexao, facebook, google, twitter, instagram, usuario_id)"
-        . "VALUES('$data', '$generos', '$nome', '$informacoes', '$fileName', '$reflexao', '$facebook', '$google', '$twitter', '$instagram', $id_usuario)";
+
+$insert = "INSERT INTO autor (data_autor, nome, info, img, reflexao, facebook, google, twitter, instagram, usuario_id)"
+        . "VALUES('$data',  '$nome', '$informacoes', '$fileName', '$reflexao', '$facebook', '$google', '$twitter', '$instagram', $id_usuario)";
 
 $executa_insert = mysql_query($insert)or die(mysql_error());
 
