@@ -139,15 +139,20 @@
                         $id_autor = $_GET['id'];
                         $seleciona_dados_update = "SELECT * FROM autor WHERE autor_id = $id_autor";
 
+
                         $executa_seleciona_dados = mysql_query($seleciona_dados_update)or die(mysql_error());
                         $dados_update = mysql_fetch_array($executa_seleciona_dados);
+
+
+                        $data_autor = explode('-', $dados_update['data_autor']);
+                        $nova_data = $data_autor[2] . "-" . $data_autor[1] . "-" . $data_autor[0];
                         ?>
 
                         <form role="form" action="php/update_autor.php" method="POST" enctype='multipart/form-data'>
 
                             <div class="form-group col-sm-4">
                                 <label for="exampleInputEmail1">DATA</label>
-                                <input value='<?php echo $dados_update['data_autor']; ?>' name="data" class="form-control form-control-inline input-medium default-date-picker"  size="16" type="text" value="" />
+                                <input value='<?php echo $nova_data; ?>' name="data" class="form-control form-control-inline input-medium default-date-picker"  size="16" type="text" value="" />
                             </div>
 
                             <!-- <div class="checkboxes col-sm-7">

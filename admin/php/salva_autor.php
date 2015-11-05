@@ -22,8 +22,10 @@ $twitter = $_POST['twitter'];
 $instagram = $_POST['instagram'];
 
 
-$data_autor = explode('/', $inicio);
-$data_inicion = $data_autor[2] . "-" . $data_autor[1] . "-" . $data_autor[0];
+
+$data_autor = explode('-', $data);
+$nova_data = $data_autor[2] . "-" . $data_autor[1] . "-" . $data_autor[0];
+
 
 //PEGANDO IMAGEM
 $fileName = $_FILES["img"]["name"];
@@ -32,9 +34,8 @@ $fileTmpLoc = $_FILES["img"]["tmp_name"];
 $moveResult = move_uploaded_file($fileTmpLoc, $pathAndName);
 
 
-
 $insert = "INSERT INTO autor (data_autor, nome, info, img, reflexao, facebook, google, twitter, instagram, usuario_id)"
-        . "VALUES('$data',  '$nome', '$informacoes', '$fileName', '$reflexao', '$facebook', '$google', '$twitter', '$instagram', $id_usuario)";
+        . "VALUES('$nova_data',  '$nome', '$informacoes', '$fileName', '$reflexao', '$facebook', '$google', '$twitter', '$instagram', $id_usuario)";
 
 $executa_insert = mysql_query($insert)or die(mysql_error());
 

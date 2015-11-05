@@ -20,7 +20,10 @@ $facebook = $_POST['facebook'];
 $google = $_POST['google'];
 $twitter = $_POST['twitter'];
 $instagram = $_POST['instagram'];
+$id_autor = $_POST['id'];
 
+$data_autor = explode('-', $data);
+$nova_data = $data_autor[2] . "-" . $data_autor[1] . "-" . $data_autor[0];
 
 $fileName = $_FILES["img"]["name"];
 
@@ -35,8 +38,8 @@ if ($fileName == "") {
     $moveResult = move_uploaded_file($fileTmpLoc, $pathAndName);
 }
 
-$update = "UPDATE autor SET data_autor = '$data', nome = '$nome', info = '$informacoes', img = '$nova_imagem',"
-        . " reflexao = '$reflexao', facebook = '$facebook', google = '$google', twitter = '$twitter', instagram = '$instagram' ";
+$update = "UPDATE autor SET data_autor = '$nova_data', nome = '$nome', info = '$informacoes', img = '$nova_imagem',"
+        . " reflexao = '$reflexao', facebook = '$facebook', google = '$google', twitter = '$twitter', instagram = '$instagram' WHERE autor_id = $id_autor ";
 
 $executa_update = mysql_query($update)or die(mysql_error());
 
