@@ -6,7 +6,7 @@ $status = true;
 
 if ($status) {
     $conexao = mysql_connect("localhost", "root", "") or die("Erro na conexao!");
-    $db = mysql_select_db("admin", $conexao) or die("Erro ao selecionar banco de dados!");
+    $db = mysql_select_db("admin_reggo", $conexao) or die("Erro ao selecionar banco de dados!");
 } else {
     $conexao = mysql_connect('localhost', 'root', '') or die(mysql_error());
     $db = mysql_select_db('admin', $conexao);

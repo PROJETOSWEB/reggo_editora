@@ -12,7 +12,7 @@ if ($executa_delete) {
     ?>
 
     <script>
-        window.location.href = '../vusuario.php?respt=sucesso';
+        window.location.href = '../list_usuario.php?respt=sucesso';
     </script>
     <?php
 
@@ -20,7 +20,7 @@ if ($executa_delete) {
     ?>
 
     <script>
-        window.location.href = '../vusuario.php?respt=sucesso';
+        window.location.href = '../list_usuario.php?respt=sucesso';
     </script>
     <?php
 
