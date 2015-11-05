@@ -53,7 +53,7 @@
                     <section class="panel">
 
                         <header class="panel-heading">
-                            <a href="livro.php"><button class="btn btn-primary"><span class="glyphicon glyphicon-plus">
+                            <a href="livro.php?tipo=insert"><button class="btn btn-primary"><span class="glyphicon glyphicon-plus">
                                     </span> LIVRO</button>
                             </a>
                         </header>
@@ -64,8 +64,10 @@
                                     <thead>
                                         <tr>
                                             <th style="text-align: left;">TITULO DA LIVRO</th>
-                                            <th style="text-align: center;">DATA</th>                                            <th style="text-align: center;">GÊNERO</th>
-                                            <th style="text-align: center;">AUTOR</th>                                            <th style="text-align: center;">POSTADO POR</th>
+                                            <th style="text-align: center;">DATA</th>
+                                            <th style="text-align: center;">ASSUNTO</th>
+                                            <th style="text-align: center;">AUTOR</th>
+                                            <th style="text-align: center;">POSTADO POR</th>
                                             <th style="text-align: center;">EDITAR</th>
                                             <th style="text-align: center;">EXCLUIR</th>
 
@@ -75,8 +77,10 @@
 
 
                                         <?php
-                                        $seleciona = "SELECT * FROM noticia INNER JOIN
-                                                      usuario ON noticia.usuario_id = usuario.usuario_id";
+                                        $seleciona = "SELECT * FROM livro INNER JOIN autor
+                                                      ON autor.autor_id = livro.autor_id
+                                                      INNER JOIN assunto ON assunto.assunto_id = livro.assunto_id
+                                                      INNER JOIN usuario ON usuario.usuario_id = livro.usuario_id";
 
                                         $seleciona_executa = mysql_query($seleciona)or die(mysql_error());
 
@@ -85,9 +89,11 @@
 
                                             <tr class="gradeA" style="text-align: center;">
                                                 <td style="text-align: left;"><?php echo $dados_array['titulo']; ?></td>
-                                                <td><?php echo $dados_array['data_noticia']; ?></td>                                                <td>NOTÍCIA</td>
+                                                <td><?php echo $dados_array['data_noticia']; ?></td>
+                                                <td>NOTÍCIA</td>
                                                 <td>CELDO BRAGA</td>
-                                                <td><?php echo $dados_array['nome']; ?></td>
+
+                                                <td><?php echo $dados_array['nome']; ?></td>
                                                 <td><a href="#"><img src="img/editar.png" alt="" /></a></td>
                                                 <td><a href="php/exclui_noticia.php?id=<?php echo $dados_array['noticia_id']; ?>"><img src="img/excluir.png" alt="" /></a></td>
                                             </tr>
