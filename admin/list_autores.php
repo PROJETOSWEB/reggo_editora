@@ -28,6 +28,59 @@
             <div class="divider"></div>
 
             </br>
+            
+            <?php
+            if (isset($_GET['resp'])) {
+                if ($_GET['resp'] == "sucesso") {
+                    ?>
+
+                    <div class="alert alert-success fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>SUCESSO!</strong> Autor cadastrado com sucesso!
+                    </div>
+                    <?php
+                } else if ($_GET['resp'] == "erro") {
+                    ?>
+
+                    <div class="alert alert-danger fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>ERRO!</strong> Ocorreu um erro ao cadastrar o Autor
+                    </div>
+                    <?php
+                }
+            }
+            ?>
+
+            <?php
+            if (isset($_GET['respe'])) {
+
+                if ($_GET['respe'] == "sucesso") {
+                    ?>
+
+                    <div class="alert alert-success fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>SUCESSO!</strong> Autor alterado com sucesso!
+                    </div>
+                    <?php
+                } else if ($_GET['respe'] == "erro") {
+                    ?>
+
+                    <div class="alert alert-danger fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>ERRO!</strong> Ocorreu um erro ao alterar o Autor
+                    </div>
+                    <?php
+                }
+            }
+            ?>
 
             <?php
             if (isset($_GET['respt'])) {
@@ -42,17 +95,26 @@
                         <strong>SUCESSO!</strong> Autor excluido com sucesso!
                     </div>
                     <?php
+                } else if ($_GET['respt'] == "erro") {
+                    ?>
+
+                    <div class="alert alert-danger fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>ERRO!</strong> Ocorreu um erro ao excluir o Autor
+                    </div>
+                    <?php
                 }
             }
             ?>
-
             <div class="row">
                 <div class="col-lg-12">
 
                     <section class="panel">
 
                         <header class="panel-heading">
-                            <a href="autor.php"><button class="btn btn-primary"><span class="glyphicon glyphicon-plus">
+                            <a href="autor.php?tipo=insert"><button class="btn btn-primary"><span class="glyphicon glyphicon-plus">
                                     </span> AUTOR</button>
                             </a>
                         </header>
@@ -75,8 +137,9 @@
                                     <tbody>
 
                                         <?php
-                                        $sql_seleciona = "SELECT links.nome as link, usuario.nome as usuario, links_id FROM links INNER JOIN
-                                                         usuario ON links.usuario_id = usuario.usuario_id";
+                                        $sql_seleciona = "SELECT *, usuario.nome as usunome, autor.nome as autornome FROM autor
+                                                          INNER JOIN usuario ON autor.usuario_id = usuario.usuario_id
+                                                          ORDER BY autor_id";
 
                                         $executa_sql_selecinona = mysql_query($sql_seleciona)or die(mysql_error());
 
@@ -84,8 +147,8 @@
                                             ?>
 
                                             <tr class="gradeA">
-                                                <td><?php echo $array_dados['link'] ?></td>
-                                                <td style="text-align: center;"><?php echo $array_dados['usuario'] ?></td>
+                                                <td><?php echo $array_dados['autornome'] ?></td>
+                                                <td style="text-align: center;"><?php echo $array_dados['usunome'] ?></td>
                                                 <td style="text-align: center;"><a href="#"><img src="img/editar.png" alt="" /></a></td>
                                                 <td style="text-align: center;"><a href="php/exclui_link.php?id=<?php echo $array_dados['links_id']; ?>"><img src="img/excluir.png" alt="" /></a></td>
 
@@ -95,12 +158,6 @@
                                             <?php
                                         }
                                         ?>
-
-
-
-
-
-
 
                                     </tbody>
                                 </table>
