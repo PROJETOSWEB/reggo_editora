@@ -30,6 +30,59 @@
             </br>
 
             <?php
+            if (isset($_GET['resp'])) {
+                if ($_GET['resp'] == "sucesso") {
+                    ?>
+
+                    <div class="alert alert-success fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>SUCESSO!</strong> Livro cadastrado com sucesso!
+                    </div>
+                    <?php
+                } else if ($_GET['resp'] == "erro") {
+                    ?>
+
+                    <div class="alert alert-danger fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>ERRO!</strong> Ocorreu um erro ao cadastrar o Livro
+                    </div>
+                    <?php
+                }
+            }
+            ?>
+
+            <?php
+            if (isset($_GET['respe'])) {
+
+                if ($_GET['respe'] == "sucesso") {
+                    ?>
+
+                    <div class="alert alert-success fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>SUCESSO!</strong> Livro alterado com sucesso!
+                    </div>
+                    <?php
+                } else if ($_GET['respe'] == "erro") {
+                    ?>
+
+                    <div class="alert alert-danger fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>ERRO!</strong> Ocorreu um erro ao alterar o Livro
+                    </div>
+                    <?php
+                }
+            }
+            ?>
+
+            <?php
             if (isset($_GET['respt'])) {
 
                 if ($_GET['respt'] == "sucesso") {
@@ -39,7 +92,17 @@
                         <button data-dismiss="alert" class="close close-sm" type="button">
                             <i class="fa fa-times"></i>
                         </button>
-                        <strong>SUCESSO!</strong> Livro excluído com sucesso!
+                        <strong>SUCESSO!</strong> Livro excluido com sucesso!
+                    </div>
+                    <?php
+                } else if ($_GET['respt'] == "erro") {
+                    ?>
+
+                    <div class="alert alert-danger fade in">
+                        <button data-dismiss="alert" class="close close-sm" type="button">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>ERRO!</strong> Ocorreu um erro ao excluir o Livro
                     </div>
                     <?php
                 }
@@ -77,30 +140,54 @@
 
 
                                         <?php
-                                        $seleciona = "SELECT * FROM livro INNER JOIN autor
+                                        $seleciona = "SELECT *, assunto.nome as assuntonome,autor.nome as autornome FROM livro INNER JOIN autor
                                                       ON autor.autor_id = livro.autor_id
                                                       INNER JOIN assunto ON assunto.assunto_id = livro.assunto_id
-                                                      INNER JOIN usuario ON usuario.usuario_id = livro.usuario_id";
+                                                      INNER JOIN usuario ON usuario.usuario_id = livro.usuario_id order by livro_id DESC";
 
                                         $seleciona_executa = mysql_query($seleciona)or die(mysql_error());
 
+                                        $cont = 1;
+                                        $cont2= 1;
+                                        
                                         while ($dados_array = mysql_fetch_array($seleciona_executa)) {
                                             ?>
 
                                             <tr class="gradeA" style="text-align: center;">
                                                 <td style="text-align: left;"><?php echo $dados_array['titulo']; ?></td>
-                                                <td><?php echo $dados_array['data_noticia']; ?></td>
-                                                <td>NOTÍCIA</td>
-                                                <td>CELDO BRAGA</td>
+                                                <td><?php echo $dados_array['data_livro']; ?></td>
+                                                <td><?php echo $dados_array['assuntonome']; ?></td>
+                                                <td><?php echo $dados_array['autornome']; ?></td>
 
                                                 <td><?php echo $dados_array['nome']; ?></td>
-                                                <td><a href="#"><img src="img/editar.png" alt="" /></a></td>
-                                                <td><a href="php/exclui_noticia.php?id=<?php echo $dados_array['noticia_id']; ?>"><img src="img/excluir.png" alt="" /></a></td>
+                                                <td><a href="livro.php?tipo=edit&id=<?php echo $dados_array['livro_id']; ?>"><img src="img/editar.png" alt="" /></a></td>
+                                                <td style='text-align: center;'><a data-toggle="modal" href="#myModal2<?php echo $cont++; ?>"><img src="img/excluir.png" alt="" /></a></td>
                                             </tr>
 
-                                            <?php
-                                        }
-                                        ?>
+
+
+                                        <div class="modal fade" id="myModal2<?php echo $cont2++; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                        <h4 class="modal-title">Excluir Livro</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Deseja realmente excluir este Livro?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button data-dismiss="modal" class="btn btn-default" type="button">Fechar</button>
+                                                        <a href="php/exclui_livro.php?id=<?php echo $dados_array['livro_id']; ?>"><button class="btn btn-warning" type="button"> Confirmar</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <?php
+                                    }
+                                    ?>
 
                                     </tbody>
 
