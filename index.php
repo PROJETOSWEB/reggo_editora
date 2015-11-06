@@ -1,3 +1,5 @@
+<?php include './admin/conections/conexao.php'; ?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -201,163 +203,29 @@
                                         <div class="portfolio_slider">
                                             <ul class="portfolio_slider_ul">
 
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/varal_CAPA.jpg">
-                                                        <img width="380" src="images/capas/varal_CAPA.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
 
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/tributos_serafim_CAPA.jpg">
-                                                        <img width="380" src="images/capas/tributos_serafim_CAPA.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
+                                                <?php
+                                                $sql_ultimos_livros = "SELECT * FROM livro order by livro_id DESC LIMIT 0,12";
+                                                $executa_sql_ultimos_livros = mysql_query($sql_ultimos_livros)or die(mysql_error());
 
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/triade_CAPA.jpg">
-                                                        <img width="380" src="images/capas/triade_CAPA.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/teatro_do_norte_CAPA.jpg">
-                                                        <img width="380" src="images/capas/teatro_do_norte_CAPA.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/simetria_silencio_CAPA.jpg">
-                                                        <img width="380" src="images/capas/simetria_silencio_CAPA.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/poucas_boas_CAPA.jpg">
-                                                        <img width="380" src="images/capas/poucas_boas_CAPA.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/o_testemunho_das_estrelas_CAPA.jpg">
-                                                        <img width="380" src="images/capas/o_testemunho_das_estrelas_CAPA.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/meu_filho_CAPA_frontal.jpg">
-                                                        <img width="380" src="images/capas/meu_filho_CAPA_frontal.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/manao_manaus_CAPA_01.jpg">
-                                                        <img width="380" src="images/capas/manao_manaus_CAPA_01.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/italianos_em_manaus_CAPA_01.jpg">
-                                                        <img width="380" src="images/capas/italianos_em_manaus_CAPA_01.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/estudos_politicos_03.jpg">
-                                                        <img width="380" src="images/capas/estudos_politicos_03.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/design_ufam_CAPA_01.jpg">
-                                                        <img width="380" src="images/capas/design_ufam_CAPA_01.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
-
-                                                <!-- item capas -->
-                                                <li>
-                                                    <a class="photo-wrapper prettyphoto" href="images/capas/artigos_incomodar_CAPA01.jpg">
-                                                        <img width="380" src="images/capas/artigos_incomodar_CAPA01.jpg" class="scale-with-grid wp-post-image"/>
-                                                    </a>
-                                                    <div class="hover-box">
-                                                        <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                        <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-                                                <!-- // item capas -->
+                                                while ($array_ultimo_livro = mysql_fetch_array($executa_sql_ultimos_livros)) {
+                                                    ?>
 
 
+                                                    <!-- item capas -->
+                                                    <li>
+                                                        <a class="photo-wrapper prettyphoto" href="admin/imagens/livro/<?php echo $array_ultimo_livro['img']; ?>">
+                                                            <img width="380" src="admin/imagens/livro/<?php echo $array_ultimo_livro['img']; ?>" class="scale-with-grid wp-post-image"/>
+                                                        </a>
+                                                        <div class="hover-box">
+                                                            <h5><img src="images/logo-reggo.png" width="80"></h5>
+                                                            <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- // item capas -->
+                                                    <?php
+                                                }
+                                                ?>
 
                                             </ul>
                                         </div>
@@ -406,109 +274,26 @@
                                         <div class="portfolio_slider">
                                             <ul class="portfolio_slider_ul">
 
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/serafim.jpg" title="Serafim Corrêa"><img src="images/autores/serafim.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
 
+                                                <?php
+                                                $sql_ultimos_autores = "SELECT * FROM autor ORDER BY autor_id DESC LIMIT 0,12";
+                                                $executa_sql_ulimos_autores = mysql_query($sql_ultimos_autores)or die(mysql_error());
 
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/maze.jpg" title="Mazé Mourão"><img src="images/autores/maze.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
+                                                while ($array_ultimo_autor = mysql_fetch_array($executa_sql_ulimos_autores)) {
+                                                    ?>
 
+                                                <li><a class="photo-wrapper prettyphoto" href="admin/imagens/autor/<?php echo $array_ultimo_autor['img']; ?>" title="<?php echo $array_ultimo_autor['nome']; ?>"><img src="admin/imagens/autor/<?php echo $array_ultimo_autor['img']; ?>" class="scale-with-grid wp-post-image" alt="Autor"/></a>
+                                                        <div class="hover-box" style="background: none;">
+                                                            <h5><img src="images/transp.png" width="80"></h5>
+                                                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    
 
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/autor1.jpg" title="Autora XXXXX"><img  src="images/autores/autor1.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/celdo.jpg" title="Celdo Braga"><img  src="images/autores/celdo.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/renato-bagre.jpg" title="Renato Bagre"><img  src="images/autores/renato-bagre.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/roberio-braga.jpg" title="Robério Braga"><img  src="images/autores/roberio-braga.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/autor2.jpg" title="Autora XXXXX"><img  src="images/autores/autor2.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/autor3.jpg" title="Autora XXXXX"><img  src="images/autores/autor3.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/autor4.jpg" title="Autora XXXXX"><img  src="images/autores/autor4.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/autor5.jpg" title="Autora XXXXX"><img  src="images/autores/autor5.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/autor6.jpg" title="Autora XXXXX"><img  src="images/autores/autor6.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/autor7.jpg" title="Autora XXXXX"><img  src="images/autores/autor7.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/autor8.jpg" title="Autora XXXXX"><img  src="images/autores/autor8.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-                                                <li><a class="photo-wrapper prettyphoto" href="images/autores/gilberto-sucesso.jpg" title="Gilberto Sucesso"><img  src="images/autores/gilberto-sucesso.jpg" class="scale-with-grid wp-post-image" alt="Autor"/></a>
-                                                    <div class="hover-box" style="background: none;">
-                                                        <h5><img src="images/transp.png" width="80"></h5>
-                                                        <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
-                                                    </div>
-                                                </li>
-
-
-
+                                                    <?php
+                                                }
+                                                ?>
 
                                             </ul>
                                         </div>
@@ -553,7 +338,7 @@
         <script type='text/javascript' src='rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
 
         <script>
-        //<![CDATA[
+            //<![CDATA[
             jQuery(window).load(function () {
                 var retina = window.devicePixelRatio > 1 ? true : false;
                 if (retina) {
@@ -563,7 +348,7 @@
                     retinaEl.attr("src", "upload/logo_retina.png").width(retinaLogoW).height(retinaLogoH)
                 }
             });
-        //]]>
+            //]]>
         </script>
 
 
