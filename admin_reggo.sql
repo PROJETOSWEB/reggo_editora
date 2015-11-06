@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 05-Nov-2015 às 03:42
+-- Generation Time: 06-Nov-2015 às 03:09
 -- Versão do servidor: 5.6.15-log
 -- PHP Version: 5.5.8
 
@@ -78,8 +78,8 @@ CREATE TABLE IF NOT EXISTS `autor` (
 --
 
 INSERT INTO `autor` (`autor_id`, `data_autor`, `generos`, `nome`, `info`, `img`, `reflexao`, `facebook`, `google`, `twitter`, `instagram`, `usuario_id`) VALUES
-(1, '2015-10-03', '1', 'KAROLINE OLIVEIRA AVINTE', 'HDUSAHDUAHDUH', 'hora-de-aventura-finn-5373ac5591bd4.jpg', 'DASDASDASD', 'DASDSA', 'XSAHUXH', 'HUSAHUXQY', 'YDSTAXYTSA', 1),
-(6, '2015-10-03', '', 'KAROLINE ', 'HDUSAHDUAHDUH', 'hora-de-aventura-finn-5373ac5591bd4.jpg', 'DASDASDASD', 'DASDSA', 'XSAHUXH', 'HUSAHUXQY', 'YDSTAXYTSA', 1);
+(1, '2015-10-03', '1', 'Mazé Mourão ', 'HDUSAHDUAHDUH', 'autor1.jpg', 'DASDASDASD', 'DASDSA', 'XSAHUXH', 'HUSAHUXQY', 'YDSTAXYTSA', 1),
+(6, '2015-10-03', '', 'Serafim Corrêa', 'HDUSAHDUAHDUH', 'serafin.png', 'DASDASDASD', 'DASDSA', 'XSAHUXH', 'HUSAHUXQY', 'YDSTAXYTSA', 1);
 
 -- --------------------------------------------------------
 
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `livro` (
   `tipo` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '1- IMPRESSO 2-E-BOOK',
   `titulo` varchar(200) NOT NULL DEFAULT '',
   `sinopse` longtext NOT NULL,
-  `preço` double NOT NULL DEFAULT '0',
+  `preco` double NOT NULL DEFAULT '0',
   `link` varchar(100) NOT NULL DEFAULT '',
   `formato` varchar(45) NOT NULL DEFAULT '',
   `num_pag` int(10) unsigned NOT NULL DEFAULT '0',
@@ -101,11 +101,19 @@ CREATE TABLE IF NOT EXISTS `livro` (
   `assunto_id` int(10) unsigned NOT NULL,
   `autor_id` int(10) unsigned NOT NULL,
   `usuario_id` int(10) unsigned NOT NULL,
+  `img` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`livro_id`),
   KEY `fk_livro_assunto_idx` (`assunto_id`),
   KEY `fk_livro_autor1_idx` (`autor_id`),
   KEY `fk_livro_usuario1_idx` (`usuario_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `livro`
+--
+
+INSERT INTO `livro` (`livro_id`, `data_livro`, `tipo`, `titulo`, `sinopse`, `preco`, `link`, `formato`, `num_pag`, `isbn`, `assunto_id`, `autor_id`, `usuario_id`, `img`) VALUES
+(1, '2015-11-12', 1, 'Mazé Mourão - Poucas e Boas', 'hduhasuhuxhuasxhasxHDAUDASD', 44, 'http://UHUAHDU', '14x21 cm', 20, ' 978-85-8013-364-6', 2, 1, 1, 'poucas_boas_CAPA.jpg');
 
 -- --------------------------------------------------------
 
