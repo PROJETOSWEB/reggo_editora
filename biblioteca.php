@@ -90,12 +90,41 @@
             <!-- #Content -->
             <div id="Content">
                 <div class="content_wrapper clearfix">
+                
+                <!-- .sections_group -->
+                                    <div class="sections_group">
+                                        <div class="section pad0" style="padding-top:30px; padding-bottom:10px;" >
+                                            <div class="section_wrapper clearfix">
+                                                <div class="items_group clearfix">
+                
+                
+                                                    <div class="column one column_fancy_heading">
+                                                        <div class="fancy_heading fancy_heading_big_icon " style="">
+                                                            <span class="icon"><i class="icon-book"></i></span>
+                                                            <h3>BIBLIOTECA</h3>
+                                                            <!--<div class="inside">
+                                                                    Some short description text to fulfill the heading
+                                                            </div>-->
+                                                        </div>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<div class="section the_content">
+                                            <div class="section_wrapper">
+                                                <div class="the_content_wrapper">
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                
                     <!-- .sections_group -->
                     <div class="sections_group">
                         <div class="section">
 
                             <!-- #Filters -->
-                            <div id="Filters" class="isotope-filters">
+                            <!--<div id="Filters" class="isotope-filters">
                                 <div class="container">
                                     <div class="column one">
                                         <ul class="filters_buttons">
@@ -112,7 +141,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <div class="section_wrapper clearfix">
                                 <div class="column one column_portfolio">
