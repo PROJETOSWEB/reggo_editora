@@ -21,7 +21,7 @@ if (mysql_num_rows($executa_verifica_login) > 0) {
     $_SESSION['senha'] = $senha;
     $_SESSION['nome'] = $array_dados['nome'];
     $_SESSION['id'] = $array_dados['usuario_id'];
-    header('location:../dashboard.php');
+    header('location:../list_autores.php');
     
 } else {
 

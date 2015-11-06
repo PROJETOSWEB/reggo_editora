@@ -345,7 +345,7 @@
                     var retinaEl = jQuery("#logo img");
                     var retinaLogoW = retinaEl.width();
                     var retinaLogoH = retinaEl.height();
-                    retinaEl.attr("src", "upload/logo_retina.png").width(retinaLogoW).height(retinaLogoH)
+                    retinaEl.attr("src", "images/logo-reggo.png").width(retinaLogoW).height(retinaLogoH)
                 }
             });
             //]]>
@@ -514,7 +514,7 @@
         <script type='text/javascript' src='js/mfn.menu.js'></script>
         <script type='text/javascript' src='js/scripts.js'></script>
 
-
+<!-- Piwik --><script type="text/javascript">  var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u="//cluster-piwik.locaweb.com.br/";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', 1032]);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script><noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript><!-- End Piwik Code -->
 
     </body>
 </html>

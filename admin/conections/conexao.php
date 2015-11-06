@@ -2,14 +2,14 @@
 error_reporting(0);
 
 //COLOCANDO A VARIAVEL COMO VERDADEIRA - CAI NO PRIMEIRO IF. INFORMACOES DO SERVIDOR LOCAL.
-$status = true;
+$status = false;
 
 if ($status) {
     $conexao = mysql_connect("localhost", "root", "") or die("Erro na conexao!");
     $db = mysql_select_db("admin_reggo", $conexao) or die("Erro ao selecionar banco de dados!");
 } else {
-    $conexao = mysql_connect('localhost', 'root', '') or die(mysql_error());
-    $db = mysql_select_db('admin', $conexao);
+    $conexao = mysql_connect('mysql01.reggo.com.br', 'reggo1', 'maneschy25@') or die(mysql_error());
+    $db = mysql_select_db('reggo1', $conexao);
 }
 
 mysql_query("SET NAMES 'utf8'");

@@ -30,7 +30,7 @@ if($tipo == 1){
 }
 
 
-$to = 'karolfurletti@gmail.com';
+$to = 'thiago@maneschy.com';
 $subject = 'Orcamento Reggo';
 $email = $nome . "\r\n";
 $email .= $email . "\r\n";

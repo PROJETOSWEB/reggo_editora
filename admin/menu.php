@@ -2,13 +2,13 @@
 <aside>
     <div id="sidebar"  class="nav-collapse ">
         <!-- sidebar menu start-->
-        <ul class="sidebar-menu" id="nav-accordion">
-            <li>
+        <ul class="sidebar-menu" id="nav-accordion">        <li style="text-align: center;">                <span>MENU ADMINISTRATIVO</span>                   </li>        <li style="text-align: center;">                <span>• • • • • • • • • • • • • • • • • • •</span>                   </li>
+            <!--<li>
                 <a href="dashboard.php">
                     <i class="fa fa-dashboard"></i>
                     <span>Dashboard</span>
                 </a>
-            </li>						<li>			    <a  href="list_autores.php">			        <i class="fa fa-pencil-square"></i>			        <span>AUTORES</span>			    </a>			</li>						<li>			    <a  href="list_livros.php">			        <i class="fa fa-book "></i>			        <span>BIBLIOTECA</span>			    </a>			</li>			
+            </li>-->						<li>			    <a  href="list_autores.php">			        <i class="fa fa-pencil-square"></i>			        <span>AUTORES</span>			    </a>			</li>						<li>			    <a  href="list_livros.php">			        <i class="fa fa-book "></i>			        <span>BIBLIOTECA</span>			    </a>			</li>			
 
             <li>
                 <a  href="list_usuario.php">

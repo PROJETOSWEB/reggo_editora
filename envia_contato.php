@@ -5,7 +5,7 @@ $assunto = $_POST['assunto'];
 $mensagem = $_POST['mensagem'];
 
 
-$to = 'karolfurletti@gmail.com';
+$to = 'thiago@maneschy.com';
 $subject = 'Contato Reggo';
 $email = $nome . "\r\n";
 $email .= $email . "\r\n";
