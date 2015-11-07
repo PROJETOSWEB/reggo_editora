@@ -123,7 +123,7 @@
                                         <div role="form" class="wpcf7" id="wpcf7-f9896-p5721-o1" lang="en-US" dir="ltr">
                                             <div class="screen-reader-response"></div>
                                             
-                                            <form action="envia_orcamento.php" method="POST" id="contact-form" class="contact">
+                                            <form action="envia_orcamento.php" method="POST" class="contact">
                                                 <p>
                                                     <span class="wpcf7-form-control-wrap name">
                                                         <input type="text" required="required"  name="nome" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Seu nome"/>
@@ -144,7 +144,7 @@
 
                                                 <div id="msg" class="message"></div>
 
-                                            </form>
+                                           
                                         </div>
                                     </div>
 
