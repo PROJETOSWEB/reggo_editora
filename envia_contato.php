@@ -1,7 +1,7 @@
 <?php
 
-$emailsender = "karolfurletti@gmail.com";
-$emaildestinatario = "thiago@maneschy.com";
+$emailsender = "karol_ingrid_avinte@hotmail.com";
+$emaildestinatario = "karolfurletti@gmail.com";
 
 
 /* Verifica qual é o sistema operacional do servidor para ajustar o cabeçalho de forma correta. Não alterar */

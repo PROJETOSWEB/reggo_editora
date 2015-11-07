@@ -126,19 +126,19 @@
                                             <form action="envia_orcamento.php" method="POST" id="contact-form" class="contact">
                                                 <p>
                                                     <span class="wpcf7-form-control-wrap name">
-                                                        <input type="text"  name="nome" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Seu nome"/>
+                                                        <input type="text" required="required"  name="nome" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Seu nome"/>
                                                     </span>
 
                                                     <span class="wpcf7-form-control-wrap email">
-                                                        <input type="text" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Seu email"/>
+                                                        <input type="text"  required="required" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Seu email"/>
                                                     </span>
 
                                                     <span class="wpcf7-form-control-wrap subject">
-                                                        <input type="text" name="telefone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Telefones"/>
+                                                        <input type="text" required="" name="telefone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Telefones"/>
                                                     </span>
 
                                                     <span class="wpcf7-form-control-wrap message">
-                                                        <textarea  name="obs" id="comment" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Observações"></textarea>
+                                                        <textarea  required="" name="obs" id="comment" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Observações"></textarea>
                                                     </span>
                                                 </p>
 
@@ -155,12 +155,12 @@
                                             <div class="screen-reader-response"></div>
                                             <p>
                                                 <span class="wpcf7-form-control-wrap name">
-                                                    <input type="text"  name="titulo" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Título da obra"/>
+                                                    <input type="text" required="required" name="titulo" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Título da obra"/>
                                                 </span>
                                                 <br/><br/>
 
                                                 <span class="wpcf7-form-control-wrap message">
-                                                    <select name="assunto" class="form-control">
+                                                    <select required="" name="assunto" class="form-control">
                                                         <option>ESCOLHA O ASSUNTO</option>
                                                         <option>•••••••••••••••••••</option>
                                                         <option>literatura</option>
@@ -185,7 +185,7 @@
 
                                                         <span class="wpcf7-list-item first">
                                                             <input type="radio" name="status" value="1" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">Pronto para publicar</span>
+                                                            <span  class="wpcf7-list-item-label">Pronto para publicar</span>
                                                         </span>
 
                                                         <span class="wpcf7-list-item">
@@ -258,7 +258,7 @@
                                                 </span>
                                             </p>
 
-                                            <input type="submit" id="submit_contact" value="enviar" class="wpcf7-form-control wpcf7-submit"/>
+                                            <input type="submit" value="enviar" class="wpcf7-form-control wpcf7-submit"/>
                                             <div id="msg" class="message"></div>
 
                                             </form>
@@ -327,6 +327,20 @@
         <script type='text/javascript' src='js/scripts.js'></script>
 
 
-<!-- Piwik --><script type="text/javascript">  var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u="//cluster-piwik.locaweb.com.br/";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', 1032]);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script><noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript><!-- End Piwik Code -->
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//cluster-piwik.locaweb.com.br/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1032]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
     </body>
 </html>
