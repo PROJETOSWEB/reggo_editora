@@ -115,25 +115,25 @@
                                         <div role="form" class="wpcf7" id="wpcf7-f9896-p165-o1" lang="en-US" dir="ltr">
                                             <div class="screen-reader-response">
                                             </div>
-                                            
+
                                             <form action="envia_contato.php" method="POST" id="contact-form" class="contact">
                                                 <p>
                                                     <span class="wpcf7-form-control-wrap name">
-                                                        <input type="text"  name="nome" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="SEU NOME"/>
+                                                        <input type="text" required="required"  name="nome" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="SEU NOME"/>
                                                     </span>
 
                                                     <span class="wpcf7-form-control-wrap email">
-                                                        <input type="text" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="SEU EMAIL"/>
+                                                        <input type="text" required="required" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="SEU EMAIL"/>
                                                     </span>
 
                                                     <span class="wpcf7-form-control-wrap subject">
-                                                        <input type="text" name="assunto" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="ASSUNTO"/>
+                                                        <input type="text" required="required" name="assunto" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="ASSUNTO"/>
                                                     </span>
 
                                                     <span class="wpcf7-form-control-wrap message">
-                                                        <textarea  name="mensagem" id="comment" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="MENSAGEM"></textarea>
+                                                        <textarea  required="required" name="mensagem" id="comment" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="MENSAGEM"></textarea>
                                                     </span>
-                                                    <input type="submit" id="submit_contact" value="ENVIAR" class="wpcf7-form-control wpcf7-submit"/>
+                                                    <input type="submit" value="ENVIAR" class="wpcf7-form-control wpcf7-submit"/>
                                                 <div id="msg" class="message"></div>
                                                 <p></p>
                                             </form>
@@ -216,7 +216,25 @@
         <script type='text/javascript' src='js/mfn.menu.js'></script>
         <script type='text/javascript' src='js/scripts.js'></script>
 
-<!-- Piwik --><script type="text/javascript">  var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u="//cluster-piwik.locaweb.com.br/";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', 1032]);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script><noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript><!-- End Piwik Code -->
+        <!-- Piwik -->
+        <script type="text/javascript">
+                    var _paq = _paq || [];
+                    _paq.push(['trackPageView']);
+                    _paq.push(['enableLinkTracking']);
+                    (function () {
+                        var u = "//cluster-piwik.locaweb.com.br/";
+                        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                        _paq.push(['setSiteId', 1032]);
+                        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                        g.type = 'text/javascript';
+                        g.async = true;
+                        g.defer = true;
+                        g.src = u + 'piwik.js';
+                        s.parentNode.insertBefore(g, s);
+                    })();
+        </script>
+        <noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
 
     </body>
 </html>

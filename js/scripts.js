@@ -177,7 +177,7 @@
 	        
 	        $.ajax({
 	            type: "POST",
-	            url: 'contact.php',
+	            url: 'envia_contato.php',
 	            dataType: 'json',
 	            cache: false,
 	            data: $('#contact-form').serialize(),
