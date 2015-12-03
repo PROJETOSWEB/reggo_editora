@@ -43,26 +43,8 @@
 							<div class="column one column_column">
 								<h3 class="m0">CONHEÇA MAIS A REGGO EDITORA</h3>
 							</div>
-							<div class="column one-third column_column">
-								<h4>MISSÃO</h4>
-								<hr class="hr_left">
-								<p>
-									Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo mullam. Sed non mauris vitae erat consequat auctor eu in elit.
-								</p>
-							</div>
-							<div class="column one-third column_column">
-								<h4>VISÃO</h4>
-								<hr class="hr_left">
-								<p>
-									Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo mullam. Sed non mauris vitae erat consequat auctor eu in elit.
-								</p>
-							</div>
-							<div class="column one-third column_column">
-								<h4>VALORES</h4>
-								<hr class="hr_left">
-								<p>
-									Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo mullam. Sed non mauris vitae erat consequat auctor eu in elit.
-								</p>
+							<div class="column one column_column">
+								<p style="font-size: 18px;">A gente tem sempre uma história pra contar. Ou uma experiência pra dividir. Entendemos que								                                        um livro é mais que papel e encadernação, letras e mais letras. Um livro transcende tempo e								                                        espaço. Um livro é instrumento de mudança, é matéria de esperança. Livros são fiéis amigos.<br/><br/>																                                        Por isso, a Editora Reggo cuida pra que você preserve, a cada edição, o prazer de ler e								                                        escrever. Sim, porque você pode ser o nosso próximo autor ou o nosso próximo leitor .								                                        Afinal, nos livros você encontra essa liberdade de escolha.</p>
 							</div>
 						</div>
 					</div>
@@ -72,50 +54,17 @@
 					<div class="section_wrapper clearfix">
 						<div class="items_group clearfix">
 							<div class="column one column_column">
-								<h3 class="m0">ENTENDA NOSSO MÉTODO DE PUBLICAÇÃO</h3>
 							</div>
 							<div class="column one column_faq">
 								<div class="faq">
 									<div class="mfn-acc faq_wrapper open1st">
 										<div class="question">
-											<h5><span class="icon">?</span>NONONONON NONONONO NONONO ONONONON ONONONON ONONONON ONO</h5>
-											<div class="answer">
-												Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus.
+											<h5 style="font-size: 25px;"><span class="icon">•</span>Todas as formas para dar forma ao seu projeto</h5>
+											<div class="answer" style="font-size: 18px;">
+												Inovar, recriar, repaginar todas as histórias, todas as experiências 												com talento e uma visão fora do usual, fora do convencional. <br/>												Pra gente cada livro carrega em si uma forma única, da capa ao conteúdo.</br> 												<b>Nossa missão é imprimir as digitais do autor ou entregar um produto com o DNA do leitor.</b><br/>												Tudo com técnica, beleza e sensibilidade. 
 											</div>
 										</div>
-										<div class="question">
-											<h5><span class="icon">?</span>NONONONON NONONONO NONONO ONONONON ONONONON ONONONON ONO</h5>
-											<div class="answer">
-												<h4>Integer aliquam purus.</h4>
-												 Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus.<br/>
-												<br/>
-												Mauris dictum orci a auctor dignissim. In sed leo justo. Pellentesque vestibulum facilisis arcu id tincidunt.
-											</div>
-										</div>
-										<div class="question">
-											<h5><span class="icon">?</span>NONONONON NONONONO NONONO ONONONON ONONONON ONONONON ONO</h5>
-											<div class="answer">
-												Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus.
-											</div>
-										</div>
-										<div class="question">
-											<h5><span class="icon">?</span>NONONONON NONONONO NONONO ONONONON ONONONON ONONONON ONO</h5>
-											<div class="answer">
-												Quisque ac ipsum et orci accumsan dignissim. Cras dignissim urna ut quam facilisis iaculis. Nullam a lacinia sem. Praesent eu viverra mauris. Nullam ut lectus posuere, egestas lorem eget, commodo purus. Vivamus vitae sollicitudin quam. Mauris vel lobortis enim. Nulla facilisi.
-											</div>
-										</div>
-										<div class="question">
-											<h5><span class="icon">?</span>NONONONON NONONONO NONONO ONONONON ONONONON ONONONON ONO</h5>
-											<div class="answer">
-												Quisque ac ipsum et orci accumsan dignissim. Cras dignissim urna ut quam facilisis iaculis. Nullam a lacinia sem. Praesent eu viverra mauris. Nullam ut lectus posuere, egestas lorem eget, commodo purus. Vivamus vitae sollicitudin quam. Mauris vel lobortis enim. Nulla facilisi.
-											</div>
-										</div>
-										<div class="question">
-											<h5><span class="icon">?</span>NONONONON NONONONO NONONO ONONONON ONONONON ONONONON ONO</h5>
-											<div class="answer">
-												Ut vestibulum bibendum magna eget varius. Phasellus et urna in justo vestibulum fermentum in non enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin a felis pharetra, aliquam purus vitae, tristique mauris. Ut consectetur nibh posuere dolor sagittis,
-											</div>
-										</div>
+										<div class="question">											<h5 style="font-size: 25px;"><span class="icon">•</span>Ideias conectadas, ideias compartilhadas</h5>											<div class="answer" style="font-size: 18px;">												Lançando um olhar sobre o novo mundo, a Editora Reggo investe 												num mercado que só cresce: livros e revistas digitais. Seja na adaptação												de formatos físicos ou na construção de projetos especiais exclusivos 												para o mundo digital, saímos na frente, abrindo um mundo de 												possibilidades para autores ou leitores que já leem obras em seus 												tablets e smartphones. De revistas a catálogos técnicos, uma nova 												forma de reunir, produzir, consumir e distribuir os melhores conteúdos 												da mídia impressa com a mídia digital. Conteúdo segmentado, personalizado, 												portátil, com recursos multimídia e interativos. Todos compatíveis 												com as plataformas: Apple Store e Google Play.  											</div>										</div>										<div class="question">											<h5 style="font-size: 25px;"><span class="icon">•</span>Obras com assinatura e personalidade</h5>											<div class="answer" style="font-size: 18px;">												A Editora Reggo reconhece e incentiva o talento de 												nossos autores, somando todos os esforços para 												valorizar, em cada obra, o conteúdo, as ideias, a 												assinatura sentimental. Sejam técnicos, literários 												ou acadêmicos. Um trabalho planejado, que 												continua até  chegar às mãos de mais e mais 												leitores, obras cheias de personalidade e talento, 												que surgem das mais diferentes matizes literárias. 											</div>										</div>										
 									</div>
 								</div>
 							</div>
@@ -128,8 +77,7 @@
 					<div class="section_wrapper clearfix">
 						<div class="items_group clearfix">
 							<div class="column one column_column">
-								<h2>Escolha seu tipo de publicação</h2>
-								<a href="publique-literatura.html" class="button button_large button_filled">PUBLIQUE UM LIVRO AGORA!</a>
+								<a href="orcamento.php" class="button button_large button_filled">PUBLIQUE UM LIVRO AGORA!</a>
 							</div>
 						</div>
 					</div>

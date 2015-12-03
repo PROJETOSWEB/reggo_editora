@@ -112,7 +112,7 @@ include './admin/conections/conexao.php';
                                             <div class="accordion">
                                                 <h2 class="title"><?php echo $dados_autor['nome']; ?></h2>
 
-                                                <div class="mfn-acc accordion_wrapper ">
+                                                <div class="mfn-acc accordion_wrapper open1st ">
 
 
                                                     <div class="question">
@@ -148,7 +148,7 @@ include './admin/conections/conexao.php';
                                                     <i class="icon-comment-fa"></i>
                                                 </div>
                                                 <div class="desc_wrapper">
-                                                    <h4 class="title">REFLEXÃO DO AUTOR</h4>
+                                                    <!--<h4 class="title">REFLEXÃO DO AUTOR</h4>-->
                                                     <hr>
                                                     <div class="desc">
                                                         <?php echo $dados_autor['reflexao']; ?>

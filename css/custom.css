@@ -389,8 +389,8 @@ width:16.667%;
 }
 
 #centro {
-	width: 780px;
-	font-size: 18px;
+	width: 780px;	line-height: 24px;
+	font-size: 21px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;

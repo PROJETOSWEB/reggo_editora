@@ -112,12 +112,12 @@
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
                                     <div id="centro" style="text-align: center;">
-                                        A gente tem sempre uma história pra contar. Ou uma experiência pra dividir. Entendemos que<br/>
-                                        um livro é mais que papel e encadernação, letras e mais letras. Um livro transcende tempo e<br/>
+                                        A gente tem sempre uma história pra contar. Ou uma experiência pra dividir. Entendemos que
+                                        um livro é mais que papel e encadernação, letras e mais letras. Um livro transcende tempo e
                                         espaço. Um livro é instrumento de mudança, é matéria de esperança. Livros são fiéis amigos.<br/><br/>
 
-                                        Por isso, a Editora Reggo cuida pra que você preserve, a cada edição, o prazer de ler e<br/>
-                                        escrever. Sim, porque você pode ser o nosso próximo autor ou o nosso próximo leitor .<br/>
+                                        Por isso, a Editora Reggo cuida pra que você preserve, a cada edição, o prazer de ler e
+                                        escrever. Sim, porque você pode ser o nosso próximo autor ou o nosso próximo leitor .
                                         Afinal, nos livros você encontra essa liberdade de escolha.
                                     </div>
                                 </div>
@@ -130,15 +130,15 @@
 
                                     <div class="column one-second column_column" style="margin-top: 20px;">
                                         <div style="padding: 0 40px;">
-                                            <h2>Todas as formas para dar forma ao seu projeto</h2>
-                                            <p>
+                                            <h3>Todas as formas para dar forma ao seu projeto</h3>
+                                            <p style="font-size: 18px;">
                                                 Inovar, recriar, repaginar todas as histórias, todas as experiências 
                                                 com talento e uma visão fora do usual, fora do convencional. 
                                                 Pra gente cada livro carrega em si uma forma única, da capa ao conteúdo.</br> 
-                                                <b>Nossa missão é imprimir as digitais do autor ou entregar um produto com o DNA do leitor.</b>
+                                                <b>Nossa missão é imprimir as digitais do autor ou entregar um produto com o DNA do leitor.</b><br/>
                                                 Tudo com técnica, beleza e sensibilidade.  
                                             </p>
-                                            <a href="orcamento.php" class="button button_large">publique hoje mesmo</a>
+                                            <a href="orcamento.php" class="button button_small">publique hoje mesmo</a>
                                         </div>
                                     </div>
 
@@ -168,8 +168,8 @@
 
                                     <div class="column one-second column_column" style="margin-top: 20px;">
                                         <div style="padding: 0 40px;">
-                                            <h2>Ideias conectadas, ideias compartilhadas</h2>
-                                            <p>
+                                            <h3>Ideias conectadas, ideias compartilhadas</h3>
+                                            <p style="font-size: 18px;">
                                                 Lançando um olhar sobre o novo mundo, a Editora Reggo investe 
                                                 num mercado que só cresce: livros e revistas digitais. Seja na adaptação
                                                 de formatos físicos ou na construção de projetos especiais exclusivos 
@@ -181,7 +181,7 @@
                                                 portátil, com recursos multimídia e interativos. Todos compatíveis 
                                                 com as plataformas: Apple Store e Google Play. 
                                             </p>
-                                            <a href="orcamento.php" class="button button_large">Publique hoje mesmo</a>
+                                            <a href="orcamento.php" class="button button_small">Publique hoje mesmo</a>
                                         </div>
                                     </div>
 
@@ -240,8 +240,8 @@
 
                                     <div class="column one-second column_column" style="margin-top: 20px;">
                                         <div style="padding: 0 40px;">
-                                            <h2>Obras com assinatura e personalidade</h2>
-                                            <p>
+                                            <h3>Obras com assinatura e personalidade</h3>
+                                            <p style="font-size: 18px;">
                                                 A Editora Reggo reconhece e incentiva o talento de 
                                                 nossos autores, somando todos os esforços para 
                                                 valorizar, em cada obra, o conteúdo, as ideias, a 
@@ -251,7 +251,7 @@
                                                 leitores, obras cheias de personalidade e talento, 
                                                 que surgem das mais diferentes matizes literárias.
                                             </p>
-                                            <a href="orcamento.php" class="button button_large">publique hoje mesmo</a>
+                                            <a href="orcamento.php" class="button button_small">publique hoje mesmo</a>
                                         </div>
                                     </div>
 
