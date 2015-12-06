@@ -15,15 +15,9 @@ else
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $telefone = $_POST['telefone'];
-$obs = $_POST['obs'];
-$titulo = $_POST['titulo'];
-$assunto = $_POST['assunto'];
-$status = $_POST['status'];
-$paginas = $_POST['paginas'];
-$tipo = $_POST['tipo'];
-$qtd = $_POST['qtd'];
-
-
+$tipo_envio = $_POST['tipo_envio'];
+$cep = $_POST['cep'];
+$livro_id = $_GET['id'];
 
 //$nome = "JOAO SILVA";
 //$email = "joao.silva@gmail.com";
@@ -36,44 +30,28 @@ $qtd = $_POST['qtd'];
 //$qtd = 400;
 
 
-if ($status == 1) {
+$sql_livro = "SELECT * FROM livro WHERE livro_id = $livro_id";
+$executa_livro = mysql_query($sql_livro)or die(mysql_error());
+$dados_livro = mysql_fetch_array($executa_livro);
 
-    $status = "Pronto para Publicar";
-} else if ($status == 2) {
-
-    $status = "Escrevendo";
-} else if ($status == 3) {
-
-    $status = "Vou escrever";
-}
+$codigo_livro = $dados_livro['livro_id'];
+$nome_livro = $dados_livro['titulo'];
 
 
-if ($tipo == 1) {
 
-    $tipo = "Impresso";
-} else if ($tipo == 2) {
-
-    $tipo = "e-Book";
-}
-
-
-$mensagemHTML = "<p>Orçamento Reggo</p>";
+$mensagemHTML = "<p>Compra Reggo</p>";
+$mensagemHTML .= "<hr>";
+$mensagemHTML .= "DADOS LIVRO";
+$mensagemHTML .= "<p><b>COD:</b> $codigo_livro </p>";
+$mensagemHTML .= "<p><b>Titulo:</b> $nome_livro </p>";
 $mensagemHTML .= "<hr>";
 $mensagemHTML .= "<p><b>Nome:</b> $nome </p>";
 $mensagemHTML .= "<p><b>Email:</b> $email </p>";
 $mensagemHTML .= "<p><b>Telefone:</b> $telefone </p>";
-$mensagemHTML .= "<p><b>Paginas:</b> $paginas </p>";
-
-if ($obs <> "") {
-    $mensagemHTML .= "<p><b>OBS:</b> $obs </p>";
-}
-
-$mensagemHTML .= "<p><b>Titulo:</b> $titulo </p>";
-$mensagemHTML .= "<p><b>Mensagem:</b> $mensagem </p>";
-$mensagemHTML .= "<p><b>Status:</b> $status</p>";
-$mensagemHTML .= "<p><b>Tipo:</b> $tipo</p>";
-$mensagemHTML .= "<p><b>Quantidade de Pag:</b> $qtd</p>";
+$mensagemHTML .= "<p><b>CEP:</b> $cep </p>";
+$mensagemHTML .= "<p><b>Tipo de Envio: </b> $tipo_envio</p>";
 $mensagemHTML .= "<hr>";
+
 
 
 /* Montando o cabeçalho da mensagem */
@@ -98,7 +76,7 @@ $resposta = mail($emaildestinatario, $assunto, $mensagemHTML, $headers, "-r" . $
 
 
 //INSERINDO NO BANCO DE DADOS
-$sql_insert = "INSERT INTO orcamento (nome, email, telefone) VALUES ('$nome', '$email', '$telefone')";
+$sql_insert = "INSERT INTO compra (nome, email, telefone, livro_id) VALUES ('$nome', '$email', '$telefone', $livro_id)";
 $executa_sql_insert = mysql_query($sql_insert)or die(mysql_error());
 
 
@@ -106,7 +84,7 @@ if ($resposta) {
     ?>
 
     <script>
-        window.location.href = 'orcamento.php?r=certo'
+        window.location.href = 'comprar.php?r=certo&id=<?php echo $livro_id; ?>'
 
     </script>
 
@@ -115,7 +93,7 @@ if ($resposta) {
     ?>
 
     <script>
-        window.location.href = 'orcamento.php?r=erro'
+        window.location.href = 'comprar.php?r=erro&id=<?php echo $livro_id; ?>'
 
     </script>
 

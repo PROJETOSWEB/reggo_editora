@@ -117,54 +117,62 @@
                         <div class="section pad0">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
-                                    
-									<div class="column one-second  column_column" >
-									
-									<img src="images/capas/italianos_em_manaus_CAPA_01.jpg" width="50%" style="float: right;" alt="" />
-									
-									</div>
+
+                                    <div class="column one-second  column_column">
+
+                                        <?php
+                                        $livro_id = $_GET['id'];
+                                        $sql_seleciona_livro = "SELECT * FROM livro WHERE livro_id = $livro_id";
+                                        $executa_sql_seleciona = mysql_query($sql_seleciona_livro)or die(mysql_error());
+                                        $livro_comprar = mysql_fetch_array($executa_sql_seleciona);
+                                        ?>
+
+
+                                        <img src="admin/imagens/livro/<?php echo $livro_comprar['img']; ?>" width="50%" style="float: right;" alt="" />
+
+                                    </div>
 
                                     <div class="column one-second  column_column" >
                                         <h6>QUERO COMPRA ESTE LIVRO</h6>
                                         <div role="form" class="wpcf7" id="wpcf7-f9896-p5721-o1" lang="en-US" dir="ltr">
                                             <div class="screen-reader-response"></div>
-                                            <form action="envia_orcamento.php" method="POST" class="contact">
-                                            <p>
-												<span class="wpcf7-form-control-wrap name">
+
+                                            <form action="envia_compra.php?id=<?php echo $_GET['id']; ?>" method="POST" class="contact">
+                                                <p>
+                                                    <span class="wpcf7-form-control-wrap name">
                                                         <input type="text" required="required"  name="nome" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Seu nome"/>
                                                     </span>
 
                                                     <span class="wpcf7-form-control-wrap email">
-                                                        <input type="text"  required="required" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Seu email"/>
+                                                        <input type="email"  required="required" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Seu email"/>
                                                     </span>
 
                                                     <span class="wpcf7-form-control-wrap subject">
                                                         <input type="text" required="" name="telefone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Telefones"/>
                                                     </span>                                            
-                                           
-                                                <br/>
 
-                                                <span class="wpcf7-form-control-wrap message" style="width: 300px;">
-                                                    <select required="" name="assunto" class="form-control">
-                                                        <option>TIPO DE ENVIO</option>
-                                                        <option>•••••••••••••••••••</option>
-                                                        <option>PAC</option>
-                                                        <option>SEDEX</option>
-                                                        <option>TRANSPORTADORA</option>
-                                                    </select>
-                                                </span>
-                                                
-                                                
-                                                    <span class="wpcf7-form-control-wrap message" style="width: 270px; float: left; ">
-                                                        <input type="text" required="required" name="paginas" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="seu CEP"/>
+                                                    <br/>
+
+                                                    <span class="wpcf7-form-control-wrap message" style="width: 300px;">
+                                                        <select required="" name="tipo_envio" class="form-control">
+                                                            <option value="">TIPO DE ENVIO</option>
+                                                            <option value="PAC">PAC</option>
+                                                            <option value="SEDEX">SEDEX</option>
+                                                            <option value="TRANSPORTADORA">TRANSPORTADORA</option>
+                                                        </select>
                                                     </span>
-                                                    
-                                                    <hr/>
 
-                                                                                          
 
-                                            <input type="submit" value="enviar" class="wpcf7-form-control wpcf7-submit"/>
-                                            <div id="msg" class="message"></div>
+                                                    <span class="wpcf7-form-control-wrap message" style="width: 270px; float: left; ">
+                                                        <input type="text" required="required" name="cep" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="seu CEP"/>
+                                                    </span>
+
+                                                <hr/>
+
+
+
+                                                <input type="submit" value="enviar" class="wpcf7-form-control wpcf7-submit"/>
+                                                <div id="msg" class="message"></div>
 
                                             </form>
                                         </div>
@@ -181,7 +189,7 @@
                 </div><!-- // CONTENT WRAPPER -->
 
                 <!-- #Footer -->
-                <?php include './footer_reggo.php'; ?>
+<?php include './footer_reggo.php'; ?>
             </div><!-- // CONTENT -->
 
         </div><!-- // WRAPPER -->
@@ -232,20 +240,24 @@
         <script type='text/javascript' src='js/scripts.js'></script>
 
 
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//cluster-piwik.locaweb.com.br/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 1032]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+        <!-- Piwik -->
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                var u = "//cluster-piwik.locaweb.com.br/";
+                _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                _paq.push(['setSiteId', 1032]);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript';
+                g.async = true;
+                g.defer = true;
+                g.src = u + 'piwik.js';
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
     </body>
 </html>

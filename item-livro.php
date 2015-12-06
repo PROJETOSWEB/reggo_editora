@@ -141,7 +141,7 @@
                                                         <span >R$ <?php echo number_format($dados_livro['preco'], 2, ',', ''); ?></span>
                                                     </p>
 
-                                                    <a class="button" href="<?php echo $dados_livro['link']; ?>" target="_blank"><i class="icon-lock-line"></i> QUERO COMPRAR</a>
+                                                    <a class="button" href="comprar.php?id=<?php echo $dados_livro['livro_id']; ?>" target="_blank"><i class="icon-lock-line"></i> QUERO COMPRAR</a>
                                                 </div>
 
                                                 <div class="product_meta">
@@ -254,6 +254,21 @@
                 }
             });
             //]]>
-        </script>        <!-- Piwik -->        <script type="text/javascript">          var _paq = _paq || [];          _paq.push(['trackPageView']);          _paq.push(['enableLinkTracking']);          (function() {            var u="//cluster-piwik.locaweb.com.br/";            _paq.push(['setTrackerUrl', u+'piwik.php']);            _paq.push(['setSiteId', 1032]);            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);          })();        </script>        <noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>        <!-- End Piwik Code -->
+        </script>
+        <!-- Piwik -->
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//cluster-piwik.locaweb.com.br/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 1032]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
     </body>
 </html>

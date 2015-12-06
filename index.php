@@ -205,7 +205,7 @@
 
 
                                                 <?php
-                                                $sql_ultimos_livros = "SELECT * FROM livro order by livro_id DESC LIMIT 0,12";
+                                                $sql_ultimos_livros = "SELECT * FROM livro order by rand() LIMIT 0,12";
                                                 $executa_sql_ultimos_livros = mysql_query($sql_ultimos_livros)or die(mysql_error());
 
                                                 while ($array_ultimo_livro = mysql_fetch_array($executa_sql_ultimos_livros)) {
@@ -276,7 +276,7 @@
 
 
                                                 <?php
-                                                $sql_ultimos_autores = "SELECT * FROM autor ORDER BY autor_id DESC LIMIT 0,12";
+                                                $sql_ultimos_autores = "SELECT * FROM autor ORDER BY rand() LIMIT 0,12";
                                                 $executa_sql_ulimos_autores = mysql_query($sql_ultimos_autores)or die(mysql_error());
 
                                                 while ($array_ultimo_autor = mysql_fetch_array($executa_sql_ulimos_autores)) {
@@ -514,7 +514,21 @@
         <script type='text/javascript' src='js/mfn.menu.js'></script>
         <script type='text/javascript' src='js/scripts.js'></script>
 
-<!-- Piwik --><script type="text/javascript">  var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u="//cluster-piwik.locaweb.com.br/";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', 1032]);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script><noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript><!-- End Piwik Code -->
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//cluster-piwik.locaweb.com.br/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1032]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
 
     </body>
 </html>
