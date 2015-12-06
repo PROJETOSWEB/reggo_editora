@@ -104,11 +104,10 @@
                                             <i class="icon-briefcase"></i>
                                             <i class="icon-book"></i>
                                             <br/><br/>
-                                            <h3>PREENCHA O FORMULÁRIO<br/> e solicite seu orçamento</h3>
+                                            <h3>PREENCHA O FORMULÁRIO<br/> e solicite seu orçamento de compra</h3>
 
                                             <div class="inside">
-                                                Preencha o formulário de contato abaixo para solicitar um orçamento para publicação do seu livro.
-                                            </div>
+                                                Preencha o formulário de contato abaixo para solicitar um orçamento de compra.                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -118,14 +117,20 @@
                         <div class="section pad0">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
-                                    <div class="column one-second  column_column">
-                                        <h6>SEUS DADOS</h6>
+                                    
+									<div class="column one-second  column_column" >
+									
+									<img src="images/capas/italianos_em_manaus_CAPA_01.jpg" width="50%" style="float: right;" alt="" />
+									
+									</div>
+
+                                    <div class="column one-second  column_column" >
+                                        <h6>QUERO COMPRA ESTE LIVRO</h6>
                                         <div role="form" class="wpcf7" id="wpcf7-f9896-p5721-o1" lang="en-US" dir="ltr">
                                             <div class="screen-reader-response"></div>
-                                            
                                             <form action="envia_orcamento.php" method="POST" class="contact">
-                                                <p>
-                                                    <span class="wpcf7-form-control-wrap name">
+                                            <p>
+												<span class="wpcf7-form-control-wrap name">
                                                         <input type="text" required="required"  name="nome" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Seu nome"/>
                                                     </span>
 
@@ -135,135 +140,28 @@
 
                                                     <span class="wpcf7-form-control-wrap subject">
                                                         <input type="text" required="" name="telefone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Telefones"/>
-                                                    </span>
-
-                                                    <span class="wpcf7-form-control-wrap message">
-                                                        <textarea  required="" name="obs" id="comment" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Observações"></textarea>
-                                                    </span>
-                                                </p>
-
-                                                <div id="msg" class="message"></div>
-
+                                                    </span>                                            
                                            
-                                        </div>
-                                    </div>
-
-
-                                    <div class="column one-second  column_column">
-                                        <h6>DADOS DO SEU LIVRO</h6>
-                                        <div role="form" class="wpcf7" id="wpcf7-f9896-p5721-o1" lang="en-US" dir="ltr">
-                                            <div class="screen-reader-response"></div>
-                                            <p>
-                                                <span class="wpcf7-form-control-wrap name">
-                                                    <input type="text" required="required" name="titulo" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Título da obra"/>
-                                                </span>
                                                 <br/>
 
-                                                <span class="wpcf7-form-control-wrap message" style="float: left; width: 300px;">
+                                                <span class="wpcf7-form-control-wrap message" style="width: 300px;">
                                                     <select required="" name="assunto" class="form-control">
-                                                        <option>ESCOLHA O ASSUNTO</option>
+                                                        <option>TIPO DE ENVIO</option>
                                                         <option>•••••••••••••••••••</option>
-                                                        <option>literatura</option>
-                                                        <option>arte</option>
-                                                        <option>arquitetura</option>
-                                                        <option>ciencias humanas</option>
-                                                        <option>cinema e teatro</option>
-                                                        <option>design</option>
-                                                        <option>fotografia</option>
-                                                        <option>infantojuvenil</option>
-                                                        <option>poesia</option>
-                                                        <option>moda</option>
-                                                        <option>música e dança</option>
-                                                        <option>institucionais e outros</option>
+                                                        <option>PAC</option>
+                                                        <option>SEDEX</option>
+                                                        <option>TRANSPORTADORA</option>
                                                     </select>
                                                 </span>
                                                 
                                                 
-                                                    <span class="wpcf7-form-control-wrap message" style="width: 270px;">
-                                                        <input type="text" required="required" name="paginas" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Quantas páginas?"/>
+                                                    <span class="wpcf7-form-control-wrap message" style="width: 270px; float: left; ">
+                                                        <input type="text" required="required" name="paginas" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="seu CEP"/>
                                                     </span>
                                                     
                                                     <hr/>
 
-                                                <b>QUAL O STATUS ATUAL DO SEU LIVRO?</b>
-
-                                                <span class="wpcf7-form-control-wrap orcamento_quantidade">
-                                                    <span class="wpcf7-form-control wpcf7-radio">
-
-                                                        <span class="wpcf7-list-item first">
-                                                            <input type="radio" name="status" value="1" />&nbsp;
-                                                            <span  class="wpcf7-list-item-label">Pronto para publicar</span>
-                                                        </span>
-
-                                                        <span class="wpcf7-list-item">
-                                                            <input type="radio" name="status" value="2" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">Escrevendo</span>
-                                                        </span>
-
-                                                        <span class="wpcf7-list-item">
-                                                            <input type="radio" name="status" value="3" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">Vou escrever</span>
-                                                        </span>
-
-
-                                                    </span>
-                                                </span>
-                                            </p>
-
-                                            <b>TIPO DE PUBLICAÇÃO</b>
-                                            <p>
-                                                <span class="wpcf7-form-control-wrap orcamento_quantidade">
-                                                    <span class="wpcf7-form-control wpcf7-radio">
-
-                                                        <span class="wpcf7-list-item first">
-                                                            <input type="radio" name="tipo" value="1" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">Impresso</span>
-                                                        </span>
-
-                                                        <span class="wpcf7-list-item">
-                                                            <input type="radio" name="tipo" value="2" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">e-Book</span>
-                                                        </span>
-
-
-                                                    </span>
-                                                </span>
-                                            </p>
-
-
-                                            <b>QUANTIDADE DE EXEMPLARES?</b>
-                                            <p>
-                                                <span class="wpcf7-form-control-wrap orcamento_quantidade">
-                                                    <span class="wpcf7-form-control wpcf7-radio">
-
-                                                        <span class="wpcf7-list-item first">
-                                                            <input type="radio" name="qtd" value="50" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">50</span>
-                                                        </span>
-
-                                                        <span class="wpcf7-list-item">
-                                                            <input type="radio" name="qtd" value="100" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">100</span>
-                                                        </span>
-
-                                                        <span class="wpcf7-list-item">
-                                                            <input type="radio" name="qtd" value="200" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">200</span>
-                                                        </span>
-
-                                                        <span class="wpcf7-list-item">
-                                                            <input type="radio" name="qtd" value="500" />&nbsp;
-                                                            <span class="wpcf7-list-item-label">500</span>
-                                                        </span>
-
-                                                        <span class="wpcf7-list-item last">
-                                                            <input type="radio" name="qtd" value="Acima de 500"/>&nbsp;
-                                                            <span class="wpcf7-list-item-label">Acima de 500</span>
-                                                        </span>
-
-                                                    </span>
-                                                </span>
-                                            </p>
+                                                                                          
 
                                             <input type="submit" value="enviar" class="wpcf7-form-control wpcf7-submit"/>
                                             <div id="msg" class="message"></div>
