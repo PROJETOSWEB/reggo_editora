@@ -138,7 +138,7 @@ include './admin/conections/conexao.php';
 
 
                                     //DEFININDO A QUANTIDADE DE REGISTROS POR PAGINA
-                                    $qnt = 10;
+                                    $qnt = 12;
                                     $inicio = ($p * $qnt) - $qnt;
 
 
@@ -157,7 +157,7 @@ include './admin/conections/conexao.php';
                                                         <span class="button_image more"><i class="icon-eye"></i></span>
                                                     </div>
                                                     <div class="desc_wrapper" style="margin-bottom: -10px;">
-                                                        <h6 class="title"><?php echo $array_autor['nome']; ?> | <i class="icon-briefcase"></i></h6>
+                                                        <h6 style="font-size: 18px;" class="title"><?php echo $array_autor['nome']; ?><!-- | <i class="icon-briefcase"></i>--></h6>
                                                         <hr>
                                                     </div>
                                                 </a>

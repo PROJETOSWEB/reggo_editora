@@ -162,7 +162,7 @@
 
 
                                             //DEFININDO A QUANTIDADE DE REGISTROS POR PAGINA
-                                            $qnt = 10;
+                                            $qnt = 12;
                                             $inicio = ($p * $qnt) - $qnt;
 
 

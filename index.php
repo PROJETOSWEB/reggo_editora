@@ -219,7 +219,7 @@
                                                         </a>
                                                         <div class="hover-box">
                                                             <h5><img src="images/logo-reggo.png" width="80"></h5>
-                                                            <a class="hover-button link" href="biblioteca.php"><i class="icon-link"></i></a>
+                                                            <a class="hover-button link" href="item-livro.php?liv=<?php echo $array_ultimo_livros['livro_id']; ?>"><i class="icon-link"></i></a>
                                                         </div>
                                                     </li>
                                                     <!-- // item capas -->
@@ -282,10 +282,10 @@
                                                 while ($array_ultimo_autor = mysql_fetch_array($executa_sql_ulimos_autores)) {
                                                     ?>
 
-                                                <li><a class="photo-wrapper prettyphoto" href="admin/imagens/autor/<?php echo $array_ultimo_autor['img']; ?>" title="<?php echo $array_ultimo_autor['nome']; ?>"><img src="admin/imagens/autor/<?php echo $array_ultimo_autor['img']; ?>" class="scale-with-grid wp-post-image" alt="Autor"/></a>
+                                                <li><a class="photo-wrapper" href="item-autor.php?aut=<?php echo $array_ultimo_autor['autor_id']; ?>" title="<?php echo $array_ultimo_autor['nome']; ?>">                                                    <img style="border-bottom: 7px solid #fff; border-top: 7px solid #fff; border-left: 8px solid #fff; border-right: 8px solid #fff;"                                                         src="admin/imagens/autor/<?php echo $array_ultimo_autor['img']; ?>" class="scale-with-grid wp-post-image" alt="Autor"/></a>
                                                         <div class="hover-box" style="background: none;">
                                                             <h5><img src="images/transp.png" width="80"></h5>
-                                                            <a class="hover-button link" href="autores.php"><i class="icon-link"></i></a>
+                                                           <!-- <a class="hover-button link" href="item-autor.php?aut=<?php echo $array_ultimo_autor['autor_id']; ?>"><i class="icon-link"></i></a>-->
                                                         </div>
                                                     </li>
                                                     
