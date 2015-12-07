@@ -171,7 +171,7 @@
                                                     </span>
                                                     
                                                     <span class="wpcf7-form-control-wrap message">
-                                                        <textarea  required="" name="obs" id="comment" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Observações"></textarea>
+                                                        <textarea  name="obs" id="comment" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Observações"></textarea>
                                                     </span>
 
                                                 <hr/>

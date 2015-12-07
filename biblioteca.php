@@ -90,35 +90,35 @@
             <!-- #Content -->
             <div id="Content">
                 <div class="content_wrapper clearfix">
-                
-                <!-- .sections_group -->
-                                    <div class="sections_group">
-                                        <div class="section pad0" style="padding-top:30px; padding-bottom:10px;" >
-                                            <div class="section_wrapper clearfix">
-                                                <div class="items_group clearfix">
-                
-                
-                                                    <div class="column one column_fancy_heading">
-                                                        <div class="fancy_heading fancy_heading_big_icon " style="">
-                                                            <span class="icon"><i class="icon-book"></i></span>
-                                                            <h3>BIBLIOTECA</h3>
-                                                            <!--<div class="inside">
-                                                                    Some short description text to fulfill the heading
-                                                            </div>-->
-                                                        </div>
-                                                    </div>
-                
-                                                </div>
-                                            </div>
+
+                    <!-- .sections_group -->
+                    <div class="sections_group">
+                        <div class="section pad0" style="padding-top:30px; padding-bottom:10px;" >
+                            <div class="section_wrapper clearfix">
+                                <div class="items_group clearfix">
+
+
+                                    <div class="column one column_fancy_heading">
+                                        <div class="fancy_heading fancy_heading_big_icon " style="">
+                                            <span class="icon"><i class="icon-book"></i></span>
+                                            <h3>BIBLIOTECA</h3>
+                                            <!--<div class="inside">
+                                                    Some short description text to fulfill the heading
+                                            </div>-->
                                         </div>
-                                        <!--<div class="section the_content">
-                                            <div class="section_wrapper">
-                                                <div class="the_content_wrapper">
-                                                </div>
-                                            </div>
-                                        </div>-->
                                     </div>
-                
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="section the_content">
+                            <div class="section_wrapper">
+                                <div class="the_content_wrapper">
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+
                     <!-- .sections_group -->
                     <div class="sections_group">
                         <div class="section">
@@ -151,10 +151,22 @@
 
                                         <ul class="portfolio_group one-fourth isotope" style="margin-top: 50px;">
 
-
-
                                             <?php
-                                            $seleciona_livro = "SELECT * FROM livro";
+                                            //PEGANDO PAGINA ATUAL
+                                            $p = $_GET["page"];
+                                            if (isset($p)) {
+                                                $p = $p;
+                                            } else {
+                                                $p = 1;
+                                            }
+
+
+                                            //DEFININDO A QUANTIDADE DE REGISTROS POR PAGINA
+                                            $qnt = 10;
+                                            $inicio = ($p * $qnt) - $qnt;
+
+
+                                            $seleciona_livro = "SELECT * FROM livro LIMIT $inicio, $qnt";
                                             $executa_livro = mysql_query($seleciona_livro)or die(mysql_error());
 
                                             while ($array_livros = mysql_fetch_array($executa_livro)) {
@@ -174,18 +186,104 @@
 
 
                                         </ul>
-                                        
-                                        
+
+
                                         <div class="column one pager_wrapper">
-                                        	<div class="pager">								
-                                        		<a class="prev_page" href="#"><i class="icon-left-open"></i></a>
-                                        		<a href="#" class="page active">1</a>
-                                        		<a href="#" class="page">2</a>
-                                        		<a class="next_page" href="#"><i class="icon-right-open"></i></a>
-                                        	</div>
+
+                                            <?php
+                                            $sql_noticia_count = "SELECT * FROM livro ORDER BY livro_id DESC";
+                                            $sql_query_all = mysql_query($sql_noticia_count)or die(mysql_error());
+                                            $total_registros = mysql_num_rows($sql_query_all);
+                                            $pags = ceil($total_registros / $qnt);
+
+                                            // Número máximos de botões de paginação 
+                                            $max_links = 5;
+                                            ?>
+
+
+
+                                            <div class="pager">								
+
+                                                <?php
+                                                if (isset($_GET['page'])) {
+
+
+                                                    if ($_GET['page'] == 1) {
+                                                        ?>
+                                                        <a class="prev_page" href="biblioteca.php?page=1"><i class="icon-left-open"></i></a>
+
+                                                        <?php
+                                                    } else {
+                                                        ?>
+                                                        <a class="prev_page" href="biblioteca.php?page=<?php echo $p - 1; ?>"><i class="icon-left-open"></i></a>
+
+                                                        <?php
+                                                    }
+                                                } else {
+                                                    ?>
+                                                    <a class="prev_page" href="biblioteca.php?page=1"><i class="icon-left-open"></i></a>
+
+                                                    <?php
+                                                }
+                                                ?>
+
+
+                                                <?php
+                                                for ($i = $p - $max_links; $i <= $p - 1; $i++) {
+
+                                                    if ($i <= 0) {
+
+                                                        //FAZ NADA
+                                                    } else {
+                                                        ?> 
+                                                        <a href="biblioteca.php?page=<?php echo $i; ?>" class="page"><?php echo $i; ?></a>
+                                                        <?php
+                                                    }
+                                                }
+
+
+                                                echo "<a href='#' class='page active'>$p</a>";
+
+                                                for ($i = $p + 1; $i <= $p + $max_links; $i++) {
+
+
+                                                    if ($i > $pags) {
+
+                                                        //FAZ NADA
+                                                    } else {
+                                                        ?>
+                                                        <a href="biblioteca.php?page=<?php echo $i; ?>" class="page"><?php echo $i; ?></a>
+
+                                                        <?php
+                                                    }
+                                                }
+
+
+                                                if (isset($_GET['page'])) {
+
+                                                    if ($_GET['page'] == $pags) {
+                                                        ?>
+                                                        <a class="next_page" href="biblioteca.php?page=<?php echo $pags; ?>"><i class="icon-right-open"></i></a>
+
+                                                        <?php
+                                                    } else {
+                                                        ?>
+                                                        <a class="next_page" href="biblioteca.php?page=<?php echo $p + 1; ?>"><i class="icon-right-open"></i></a>
+
+                                                        <?php
+                                                    }
+                                                } else {
+                                                    ?>
+                                                    <a class="next_page" href="biblioteca.php?page=<?php echo $pags; ?>"><i class="icon-right-open"></i></a>
+
+                                                    <?php
+                                                }
+                                                ?>
+
+                                            </div>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +347,26 @@
             }
         });
         //]]>
-    </script>    <!-- Piwik -->    <script type="text/javascript">      var _paq = _paq || [];      _paq.push(['trackPageView']);      _paq.push(['enableLinkTracking']);      (function() {        var u="//cluster-piwik.locaweb.com.br/";        _paq.push(['setTrackerUrl', u+'piwik.php']);        _paq.push(['setSiteId', 1032]);        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);      })();    </script>    <noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>    <!-- End Piwik Code -->
+    </script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//cluster-piwik.locaweb.com.br/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', 1032]);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
 
 </body>
 </html>

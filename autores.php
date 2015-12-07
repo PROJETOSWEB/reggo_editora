@@ -128,7 +128,21 @@ include './admin/conections/conexao.php';
                                 <div class="items_group clearfix">
 
                                     <?php
-                                    $sql_autores = "SELECT * FROM autor ORDER BY nome";
+                                    //PEGANDO PAGINA ATUAL
+                                    $p = $_GET["page"];
+                                    if (isset($p)) {
+                                        $p = $p;
+                                    } else {
+                                        $p = 1;
+                                    }
+
+
+                                    //DEFININDO A QUANTIDADE DE REGISTROS POR PAGINA
+                                    $qnt = 10;
+                                    $inicio = ($p * $qnt) - $qnt;
+
+
+                                    $sql_autores = "SELECT * FROM autor ORDER BY nome LIMIT $inicio, $qnt";
                                     $executa_autores = mysql_query($sql_autores)or die(mysql_error());
 
                                     while ($array_autor = mysql_fetch_array($executa_autores)) {
@@ -163,18 +177,114 @@ include './admin/conections/conexao.php';
                                 </div>
                             </div>
                         </div>
-                        
-						
-						<div class="column one pager_wrapper">
-							<div class="pager">								
-								<a class="prev_page" href="#"><i class="icon-left-open"></i></a>
-								<a href="#" class="page active">1</a>
-								<a href="#" class="page">2</a>
-								<a class="next_page" href="#"><i class="icon-right-open"></i></a>
-							</div>
-						</div>
-						
-						
+
+
+                        <div class="column one pager_wrapper">
+
+                            <?php
+                            $sql_noticia_count = "SELECT * FROM autor ORDER BY nome ";
+                            $sql_query_all = mysql_query($sql_noticia_count)or die(mysql_error());
+                            $total_registros = mysql_num_rows($sql_query_all);
+                            $pags = ceil($total_registros / $qnt);
+
+                            // Número máximos de botões de paginação 
+                            $max_links = 5;
+                            ?>
+
+
+                            <div class="pager">
+
+                                <?php
+                                if (isset($_GET['page'])) {
+
+
+                                    if ($_GET['page'] == 1) {
+                                        ?>
+                                        <a class="prev_page" href="autores.php?page=1"><i class="icon-left-open"></i></a>
+
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <a class="prev_page" href="autores.php?page=<?php echo $p - 1; ?>"><i class="icon-left-open"></i></a>
+
+                                        <?php
+                                    }
+                                } else {
+                                    ?>
+                                    <a class="prev_page" href="autores.php?page=1"><i class="icon-left-open"></i></a>
+
+                                    <?php
+                                }
+                                ?>
+
+
+                                <?php
+                                for ($i = $p - $max_links; $i <= $p - 1; $i++) {
+
+                                    if ($i <= 0) {
+
+                                        //FAZ NADA
+                                    } else {
+                                        ?> 
+                                        <a href="autores.php?page=<?php echo $i; ?>" class="page"><?php echo $i; ?></a>
+                                        <?php
+                                    }
+                                }
+
+
+                                echo "<a href='#' class='page active'>$p</a>";
+
+                                for ($i = $p + 1; $i <= $p + $max_links; $i++) {
+
+
+                                    if ($i > $pags) {
+
+                                        //FAZ NADA
+                                    } else {
+                                        ?>
+                                        <a href="autores.php?page=<?php echo $i; ?>" class="page"><?php echo $i; ?></a>
+
+                                        <?php
+                                    }
+                                }
+
+
+                                if (isset($_GET['page'])) {
+
+                                    if ($_GET['page'] == $pags) {
+                                        ?>
+                                        <a class="next_page" href="autores.php?page=<?php echo $pags; ?>"><i class="icon-right-open"></i></a>
+
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <a class="next_page" href="autores.php?page=<?php echo $p + 1; ?>"><i class="icon-right-open"></i></a>
+
+                                        <?php
+                                    }
+                                } else {
+                                    ?>
+                                    <a class="next_page" href="autores.php?page=<?php echo $pags; ?>"><i class="icon-right-open"></i></a>
+
+                                    <?php
+                                }
+                                ?>
+
+
+<!--                                <a class="prev_page" href="#"><i class="icon-left-open"></i></a>
+                                <a href="#" class="page active">1</a>
+                                <a href="#" class="page">2</a>
+                                <a class="next_page" href="#"><i class="icon-right-open"></i></a>-->
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -362,7 +472,25 @@ include './admin/conections/conexao.php';
             //]]>
         </script>
 
-<!-- Piwik --><script type="text/javascript">  var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u="//cluster-piwik.locaweb.com.br/";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', 1032]);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script><noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript><!-- End Piwik Code -->
+        <!-- Piwik -->
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                var u = "//cluster-piwik.locaweb.com.br/";
+                _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                _paq.push(['setSiteId', 1032]);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript';
+                g.async = true;
+                g.defer = true;
+                g.src = u + 'piwik.js';
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <noscript><p><img src="//cluster-piwik.locaweb.com.br/piwik.php?idsite=1032" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
 
     </body>
 </html>

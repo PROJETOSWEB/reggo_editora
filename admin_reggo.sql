@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 06-Nov-2015 às 03:09
+-- Generation Time: 07-Dez-2015 às 04:09
 -- Versão do servidor: 5.6.15-log
 -- PHP Version: 5.5.8
 
@@ -84,6 +84,29 @@ INSERT INTO `autor` (`autor_id`, `data_autor`, `generos`, `nome`, `info`, `img`,
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `compra`
+--
+
+CREATE TABLE IF NOT EXISTS `compra` (
+  `compra_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nome` varchar(200) NOT NULL DEFAULT '',
+  `email` varchar(200) NOT NULL DEFAULT '',
+  `telefone` varchar(200) NOT NULL DEFAULT '',
+  `livro_id` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`compra_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `compra`
+--
+
+INSERT INTO `compra` (`compra_id`, `nome`, `email`, `telefone`, `livro_id`) VALUES
+(1, 'hhduahduahdu', 'duahduahdu', 'dhauhdsuadhu', 1),
+(2, 'UDAHUDHAUD', 'DHAUSHDUA', 'DHUAHDSU', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `livro`
 --
 
@@ -106,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `livro` (
   KEY `fk_livro_assunto_idx` (`assunto_id`),
   KEY `fk_livro_autor1_idx` (`autor_id`),
   KEY `fk_livro_usuario1_idx` (`usuario_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Extraindo dados da tabela `livro`
@@ -114,6 +137,29 @@ CREATE TABLE IF NOT EXISTS `livro` (
 
 INSERT INTO `livro` (`livro_id`, `data_livro`, `tipo`, `titulo`, `sinopse`, `preco`, `link`, `formato`, `num_pag`, `isbn`, `assunto_id`, `autor_id`, `usuario_id`, `img`) VALUES
 (1, '2015-11-12', 1, 'Mazé Mourão - Poucas e Boas', 'hduhasuhuxhuasxhasxHDAUDASD', 44, 'http://UHUAHDU', '14x21 cm', 20, ' 978-85-8013-364-6', 2, 1, 1, 'poucas_boas_CAPA.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `orcamento`
+--
+
+CREATE TABLE IF NOT EXISTS `orcamento` (
+  `orcamento_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nome` varchar(200) NOT NULL DEFAULT '',
+  `email` varchar(200) NOT NULL DEFAULT '',
+  `telefone` varchar(200) NOT NULL DEFAULT '',
+  PRIMARY KEY (`orcamento_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Extraindo dados da tabela `orcamento`
+--
+
+INSERT INTO `orcamento` (`orcamento_id`, `nome`, `email`, `telefone`) VALUES
+(1, 'KAROLINE', 'karol_ingrid_avinte@hotmail.com', 'd89898989'),
+(2, 'dasd', 'sinval.junior@live.com', 'd'),
+(3, 'KAROLINE', 'karol_ingrid_avinte@hotmail.com', '90909090');
 
 -- --------------------------------------------------------
 

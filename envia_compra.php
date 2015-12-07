@@ -17,7 +17,9 @@ $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $tipo_envio = $_POST['tipo_envio'];
 $cep = $_POST['cep'];
+$quant_livros = $_POST['quant_livros'];
 $livro_id = $_GET['id'];
+$obs = $_POST['obs'];
 
 //$nome = "JOAO SILVA";
 //$email = "joao.silva@gmail.com";
@@ -44,12 +46,16 @@ $mensagemHTML .= "<hr>";
 $mensagemHTML .= "DADOS LIVRO";
 $mensagemHTML .= "<p><b>COD:</b> $codigo_livro </p>";
 $mensagemHTML .= "<p><b>Titulo:</b> $nome_livro </p>";
+$mensagemHTML .= "<p><b>QTD LIVROS:</b> $quant_livros </p>";
 $mensagemHTML .= "<hr>";
 $mensagemHTML .= "<p><b>Nome:</b> $nome </p>";
 $mensagemHTML .= "<p><b>Email:</b> $email </p>";
 $mensagemHTML .= "<p><b>Telefone:</b> $telefone </p>";
 $mensagemHTML .= "<p><b>CEP:</b> $cep </p>";
 $mensagemHTML .= "<p><b>Tipo de Envio: </b> $tipo_envio</p>";
+if ($obs <> "") {
+    $mensagemHTML .= "<p><b>OBS:</b> $obs </p>";
+}
 $mensagemHTML .= "<hr>";
 
 
