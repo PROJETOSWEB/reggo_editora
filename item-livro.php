@@ -141,7 +141,7 @@
                                                         <span >R$ <?php echo number_format($dados_livro['preco'], 2, ',', ''); ?></span>
                                                     </p>
 
-                                                    <a class="button" href="comprar.php?id=<?php echo $dados_livro['livro_id']; ?>" target="_blank"><i class="icon-lock-line"></i> QUERO COMPRAR</a>
+                                                    <a class="button" href="comprar.php?id=<?php echo $dados_livro['livro_id']; ?>"><i class="icon-lock-line"></i> QUERO COMPRAR</a>
                                                 </div>
 
                                                 <div class="product_meta">

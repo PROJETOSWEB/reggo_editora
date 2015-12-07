@@ -11,7 +11,7 @@
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>PUBLIQUE • ORÇAMENTO</title>
+        <title>COMPRE UM LIVRO</title>
 
 
         <link rel="shortcut icon" href="images/ico-reggo.png" type="image/x-icon" />	
@@ -128,12 +128,12 @@
                                         ?>
 
 
-                                        <img src="admin/imagens/livro/<?php echo $livro_comprar['img']; ?>" width="50%" style="float: right;" alt="" />
+                                        <img src="admin/imagens/livro/<?php echo $livro_comprar['img']; ?>" width="65%" style="float: right;" alt="" />
 
                                     </div>
 
                                     <div class="column one-second  column_column" >
-                                        <h6>QUERO COMPRA ESTE LIVRO</h6>
+                                        <h3><b>R$ <?php echo $livro_comprar['preco']; ?>,00 </b></h3>
                                         <div role="form" class="wpcf7" id="wpcf7-f9896-p5721-o1" lang="en-US" dir="ltr">
                                             <div class="screen-reader-response"></div>
 
@@ -152,8 +152,11 @@
                                                     </span>                                            
 
                                                     <br/>
-
-                                                    <span class="wpcf7-form-control-wrap message" style="width: 300px;">
+                                                    <span class="wpcf7-form-control-wrap message" style="width: 150px; float: left; ">
+                                                        <input type="text" required="required" name="quant_livros" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Quantos livros?"/>
+                                                    </span>
+                                                    
+                                                    <span class="wpcf7-form-control-wrap message" style="width: 250px;">
                                                         <select required="" name="tipo_envio" class="form-control">
                                                             <option value="">TIPO DE ENVIO</option>
                                                             <option value="PAC">PAC</option>
@@ -163,15 +166,19 @@
                                                     </span>
 
 
-                                                    <span class="wpcf7-form-control-wrap message" style="width: 270px; float: left; ">
+                                                    <span class="wpcf7-form-control-wrap message" style="width: 150px; float: left; ">
                                                         <input type="text" required="required" name="cep" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="seu CEP"/>
+                                                    </span>
+                                                    
+                                                    <span class="wpcf7-form-control-wrap message">
+                                                        <textarea  required="" name="obs" id="comment" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Observações"></textarea>
                                                     </span>
 
                                                 <hr/>
 
 
 
-                                                <input type="submit" value="enviar" class="wpcf7-form-control wpcf7-submit"/>
+                                                <input class="button " type="submit" value="enviar" class="wpcf7-form-control wpcf7-submit"/>
                                                 <div id="msg" class="message"></div>
 
                                             </form>

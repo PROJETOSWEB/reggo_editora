@@ -163,7 +163,18 @@ include './admin/conections/conexao.php';
                                 </div>
                             </div>
                         </div>
-
+                        
+						
+						<div class="column one pager_wrapper">
+							<div class="pager">								
+								<a class="prev_page" href="#"><i class="icon-left-open"></i></a>
+								<a href="#" class="page active">1</a>
+								<a href="#" class="page">2</a>
+								<a class="next_page" href="#"><i class="icon-right-open"></i></a>
+							</div>
+						</div>
+						
+						
                     </div>
                 </div>
             </div>
