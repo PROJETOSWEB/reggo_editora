@@ -167,7 +167,7 @@ a.button_image, span.button_image { display: block; width: 55px; height: 55px; l
 #Top_bar .logo { float: left; }
 #Top_bar .logo h1 { line-height: 0; font-size: 0; }
 #Top_bar #logo { 
-background-image: url(../images/logo-reggo-bk.png);
+background-image: url(../images/logo-reggo-bk.png);background-repeat: no-repeat;
 margin-top: 15px;
 width: 200px;
 height: 50px;

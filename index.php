@@ -108,7 +108,7 @@
                     <!-- .sections_group -->
                     <div class="sections_group">
 
-                        <div class="section homeservices">
+                        <div class="section homeservices celular">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
                                     <div id="centro" style="text-align: center;">
@@ -124,7 +124,7 @@
                             </div>
                         </div>
 
-                        <div class="section highlight-left center pad40">
+                        <div class="section highlight-left center pad40 celular">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
 
@@ -154,7 +154,7 @@
                             </div>
                         </div>
 
-                        <div class="section highlight-right center pad40">
+                        <div class="section highlight-right center pad40 celular">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
 
@@ -196,7 +196,7 @@
                                 <div class="items_group clearfix">
                                     <div class="column one column_fancy_heading">
                                         <div class="fancy_heading fancy_heading_color no_icon">
-                                            <h3>NOSSAS ÚLTIMAS PUBLICAÇÕES</h3>
+                                            <h3 class="font-med">NOSSAS ÚLTIMAS PUBLICAÇÕES</h3>
                                         </div>
                                     </div>
                                     <div class="column one column_portfolio_slider">
@@ -234,14 +234,14 @@
                             </div>
                         </div>
                         <!-- // CAPAS -->
-                        <div class="section highlight-left center pad40">
+                        <div class="section highlight-left center pad40 ">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
 
                                     <div class="column one-second column_column" style="margin-top: 20px;">
                                         <div style="padding: 0 40px;">
-                                            <h3>Obras com assinatura e personalidade</h3>
-                                            <p style="font-size: 18px;">
+                                            <h3 class="celular">Obras com assinatura e personalidade</h3>                                            <br/>
+                                            <p style="font-size: 18px;" class="font-peq">
                                                 A Editora Reggo reconhece e incentiva o talento de 
                                                 nossos autores, somando todos os esforços para 
                                                 valorizar, em cada obra, o conteúdo, as ideias, a 
@@ -255,7 +255,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="column one-second column_image" style="margin: 0px;">
+                                    <div class="column one-second column_image celular" style="margin: 0px;">
                                         <div class="scale-with-grid aligncenter wp-caption no-hover">
                                             <div class="photo">
                                                 <img class="scale-with-grid" src="images/letras-icon.jpg" alt=""/>

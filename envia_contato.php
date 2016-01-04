@@ -1,7 +1,6 @@
 <?php
 
-$emailsender = "karol_ingrid_avinte@hotmail.com";
-$emaildestinatario = "karolfurletti@gmail.com";
+$emailsender = $email;$emaildestinatario = "editora@reggo.com.br";
 
 
 /* Verifica qual é o sistema operacional do servidor para ajustar o cabeçalho de forma correta. Não alterar */
@@ -43,7 +42,7 @@ $mensagemHTML = "<p>Dados do Formulario de Contato</p>";
 $mensagemHTML .= "<hr>";
 $mensagemHTML .= "<p><b>Nome:</b> $nome </p>";
 $mensagemHTML .= "<p><b>Email:</b> $email </p>";
-//$mensagemHTML .= "<p>Assunto: $assunto </p>";
+//$mensagemHTML .= "<p><b>Assunto:</b> $assunto </p>";
 $mensagemHTML .= "<p><b>Mensagem:</b> $mensagem </p>";
 $mensagemHTML .= "<hr>";
 

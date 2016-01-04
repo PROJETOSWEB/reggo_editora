@@ -1,7 +1,7 @@
 ﻿<?php
 include './admin/conections/conexao.php';
 $emailsender = $email;
-$emaildestinatario = "karolfurletti@gmail.com";
+$emaildestinatario = "editora@reggo.com.br";
 
 /* Verifica qual é o sistema operacional do servidor para ajustar o cabeçalho de forma correta. Não alterar */
 if (PHP_OS == "Linux")
